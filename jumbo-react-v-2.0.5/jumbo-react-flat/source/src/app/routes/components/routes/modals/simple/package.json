@@ -1,0 +1,9 @@
+{
+  "name": "SimpleDialog",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SimpleDialog.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

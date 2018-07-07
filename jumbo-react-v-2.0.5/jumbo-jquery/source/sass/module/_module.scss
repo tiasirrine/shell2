@@ -1,0 +1,440 @@
+/* Module Style */
+
+.gx-wrapper-module {
+  @include display-flex(flex, column, nowrap);
+  @include align-items(stretch);
+  height: 100%;
+}
+
+.gx-module {
+  position: relative;
+  @include display-flex(flex, row, nowrap);
+  margin: -24px;
+}
+
+.module-side {
+  position: relative;
+  z-index: 2;
+  @include display-flex(flex, column, nowrap);
+  @include flex(0, 1, 230px);
+  max-width: 230px;
+  min-width: 230px;
+  border-right: 1px solid $gray-200;
+}
+
+.module-side-header {
+  border-bottom: solid 1px $gray-200;
+  @include display-flex(flex, column, nowrap);
+
+  & .user-detail {
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
+
+.module-logo {
+  padding: 10px;
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+  min-height: 78px;
+  font-size: 20px;
+  background-color: lighten($gray-100, 0.5%);
+  color: darken($gray-800, 2%);
+  & i {
+    font-size: 28px;
+  }
+}
+
+.module-user-info {
+  @include display-flex(flex, column, nowrap);
+}
+
+.module-user-detail {
+  font-size: 12px;
+}
+
+.module-side-content {
+  @extend .module-user-info;
+  background-color: $white;
+}
+
+.module-add-task {
+  @include display-flex();
+  padding: 24px;
+}
+
+.module-nav {
+  list-style: none;
+  padding-left: 0;
+  @include display-flex(flex, column, nowrap);
+  @include justify-content(center);
+
+  & li {
+    @include display-flex(flex, column, nowrap);
+  }
+
+  & li a {
+    padding: 12px 29px;
+    color: lighten($body-color, 50%);
+    @include display-flex();
+    @include align-items(center);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $body-color;
+    }
+
+    &.active {
+      color: $gx-primary;
+    }
+  }
+
+  & li i {
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  & li span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  & li.module-nav-label {
+    padding: 12px 29px;
+  }
+}
+
+.module-box {
+  position: relative;
+  z-index: 2;
+  @include display-flex(flex, column, nowrap);
+  @include flex(1, 1, auto);
+  max-width: calc(100% - 230px);
+}
+
+.module-box-header {
+  padding: 10px 26px;
+  min-height: 79px;
+  @include display-flex(flex, column, nowrap);
+  @include justify-content(center);
+  background-color: $white;
+  border-bottom: solid 1px $gray-200;
+
+  & .search-bar {
+    min-width: 350px;
+    max-width: 350px;
+
+    &.right-side-icon .form-control {
+      @include border-radius(0);
+      height: 46px;
+      padding: 10px 18px 10px 40px;
+
+      &:focus {
+        background-color: $gray-100;
+      }
+    }
+
+    &.right-side-icon .search-icon {
+      width: 25px;
+      height: 46px;
+      font-size: 16px;
+      left: 10px;
+      top: 0;
+      padding: 0;
+    }
+  }
+}
+
+.module-box-header {
+  & .dropdown-menu {
+    &:before,
+    &:after {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid $body-color;
+      top: -12px;
+      content: "";
+      height: 12px;
+      position: absolute;
+      right: 10px;
+      width: 10px;
+    }
+
+    &:after {
+      border-bottom: 5px solid $white;
+      top: -10px;
+      height: 10px;
+    }
+  }
+
+  & .nav-searchbox .dropdown-menu {
+    &:before,
+    &:after {
+      left: 10px;
+      right: auto;
+    }
+  }
+}
+
+.module-box-header-inner {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(space-between);
+}
+
+.module-box-content {
+  background-color: $white;
+  @include display-flex(flex, column, nowrap);
+}
+
+.module-box-topbar {
+  padding: 20px 28px;
+  border-bottom: solid 1px $gray-200;
+  @include display-flex();
+
+  & button + button {
+    @include border-radius(0);
+  }
+}
+
+.module-box-topbar-todo {
+  padding-left: 64px;
+
+  @media screen and (max-width: 575px) {
+    padding-left: 27px;
+  }
+}
+
+.module-list-icon {
+  @include display-flex();
+  @include align-items(center);
+  padding-right: 10px;
+}
+
+.bar-icon {
+  margin-right: 15px;
+}
+
+.toolbar-separator {
+  border-left: solid 1px $gray-400;
+  height: 100%;
+  width: 1px;
+  margin: 0 12px;
+}
+
+.toolbar-left {
+  margin-left: auto;
+}
+
+.module-list {
+  @include display-flex(flex, column, nowrap);
+  @include justify-content(center);
+}
+
+.module-list-item {
+  @include display-flex(flex, row, wrap);
+  @include align-items(center);
+  padding: 15px 28px;
+  border-bottom: solid 1px $gray-200;
+  //z-index: 5;
+  position: relative;
+  cursor: pointer;
+
+  &.mail-cell {
+    @include align-items(flex-start);
+
+    & .form-checkbox {
+      margin-top: 8px;
+    }
+  }
+
+  & > .check-label {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.module-detail-header {
+  margin-bottom: 10px;
+
+  & > .check-label {
+    margin-right: auto;
+  }
+}
+
+.module-list-info {
+  @include flex(1, 1, 0);
+  max-width: calc(100% - 150px);
+  @include display-flex(flex, column, nowrap);
+  margin-left: 16px;
+
+  & .subject {
+    max-width: calc(100% - 190px);
+  }
+}
+
+.module-todo-content {
+  position: relative;
+
+  & .subject {
+    margin-bottom: 5px;
+    max-width: 100%;
+  }
+}
+
+.module-list-actions {
+  text-align: right;
+}
+
+.gx-module-sidenav {
+  & .chat-sidenav-main {
+    max-width: 300px;
+    min-width: 300px;
+    width: 90%;
+  }
+}
+
+.module-date {
+  max-width: 150px;
+
+  & > div:before {
+    display: none;
+  }
+}
+
+.module-detail-item {
+  padding: 10px 28px;
+}
+
+.task-title {
+  font-size: 18px;
+}
+
+.chat-todo-avatar {
+  margin-right: 15px;
+}
+
+.modal-title {
+  @include display-flex();
+  @include justify-content(space-between);
+  @include align-items(center);
+  width: 100%;
+  font-size: 18px;
+}
+
+.loader-view-block {
+  @include display-flex(flex, column, nowrap);
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+.loader-view {
+  @extend .loader-view-block;
+}
+
+.module-date > div {
+  @include align-items(center);
+}
+
+@media screen and (max-width: 1199px) {
+  .module-box-header {
+    & .search-bar {
+      min-width: 280px;
+      max-width: 280px;
+    }
+  }
+
+  .chat-loader-view {
+    height: calc(100vh - 120px);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .modal-dialog {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .gx-module-sidenav {
+    position: relative;
+    z-index: 1045;
+  }
+
+  .module-box {
+    max-width: 100%;
+  }
+
+  .module-box-header {
+    position: relative;
+    min-height: 58px;
+    padding: 5px 26px 5px 75px;
+
+    & .drawer-btn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      border-right: solid 1px $gray-200;
+      height: 58px;
+      width: 56px;
+      line-height: 58px;
+      text-align: center;
+      color: $body-color;
+      @include border-radius(0);
+      font-size: 22px;
+    }
+
+    & .search-bar.right-side-icon .form-control {
+      height: 38px;
+      padding: 5px 18px 5px 40px;
+    }
+
+    & .search-bar.right-side-icon .search-icon {
+      height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .module-list-item,
+  .module-box-topbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .module-list-info {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+  }
+
+  .module-box-header {
+    & .search-bar {
+      -webkit-border-radius: $border-radius;
+      -moz-border-radius: $border-radius;
+      border-radius: $border-radius;
+      min-width: 280px;
+      max-width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .module-box-header {
+    & .search-bar {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 399px) {
+  .d-xs-flex {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CheckBoxListControl",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CheckBoxListControl.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

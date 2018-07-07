@@ -1,0 +1,9 @@
+{
+  "name": "InsetAvatarDividers",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InsetAvatarDividers.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

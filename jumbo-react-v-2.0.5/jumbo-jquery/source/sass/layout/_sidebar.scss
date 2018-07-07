@@ -1,0 +1,42 @@
+/*Sidebar Styles*/
+
+.side-nav {
+  & .user-profile {
+    padding: 13px 20px;
+    background-color: $sidebar-bg-darken;
+  }
+
+  & .user-avatar {
+    height: 44px !important;
+    width: 44px !important;
+    margin-right: 15px;
+  }
+
+  & .user-detail {
+    & .user-name {
+      font-size: $font-size-base;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    & .user-name a {
+      color: $sidebar-hover-color;
+      text-decoration: none;
+    }
+
+    & .dropdown-toggle:after {
+      vertical-align: middle;
+    }
+
+    & .dropdown-menu a {
+      color: $body-color;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $body-color;
+        background-color: $gray-200;
+      }
+    }
+  }
+}

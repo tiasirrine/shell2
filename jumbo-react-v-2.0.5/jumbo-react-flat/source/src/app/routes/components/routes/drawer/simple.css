@@ -1,0 +1,53 @@
+.drawer-box {
+    position: relative;
+}
+
+.drawer-box .main-content,
+.drawer-container .main-content {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.rc-drawer-sidebar {
+    background-color: #FFFFFF;
+}
+
+.drawer-box .list-group-item {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 5px;
+    border: 0;
+    padding: 5px;
+}
+
+.drawer-box .rc-drawer-sidebar {
+    position: fixed;
+}
+
+.inside-drawer {
+    width: 280px;
+}
+
+.drawer-container {
+    position: relative;
+    height: 400px;
+}
+
+.drawer-container .rc-drawer-sidebar {
+    position: absolute;
+}
+
+.drawer-container .rc-drawer-overlay {
+    position: absolute;
+}
+
+.rc-drawer-docked .rc-drawer-content {
+    border-left: 1px solid #d9d9d9;
+}
+
+
+
+

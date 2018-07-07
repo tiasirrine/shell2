@@ -1,0 +1,9 @@
+{
+  "name": "FullFeatured",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FullFeatured.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

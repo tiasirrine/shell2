@@ -1,0 +1,9 @@
+{
+  "name": "ButtonWithBadge",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ButtonWithBadge.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

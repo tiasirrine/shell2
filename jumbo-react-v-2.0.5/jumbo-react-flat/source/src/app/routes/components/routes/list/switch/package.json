@@ -1,0 +1,9 @@
+{
+  "name": "SwitchListSecondary",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SwitchListSecondary.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

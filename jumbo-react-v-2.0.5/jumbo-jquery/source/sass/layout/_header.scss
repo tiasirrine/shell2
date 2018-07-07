@@ -1,0 +1,278 @@
+/*Header Styles*/
+.gx-menu-icon {
+  outline: none;
+  @include justify-content(center);
+  @extend %size-30;
+  padding: 0 5px;
+  @extend %gx-menu-icon;
+  @include display-flex(flex, column, nowrap);
+
+  .bg-white & .menu-icon {
+    background-color: $body-color;
+  }
+}
+
+.sidebar-mobile-menu {
+  margin-right: 15px;
+}
+
+.main-header {
+  min-height: $gx-bar-height;
+
+  & .search-bar input {
+    @include transition($transition-base);
+    background-color: lighten($gx-primary, 5%);
+    color: $white;
+    & + .search-icon {
+      & i {
+        color: rgba($white, 0.8);
+      }
+    }
+
+    &:focus {
+      background-color: $white;
+      color: $body-color;
+      + .search-icon {
+        & i {
+          color: rgba($body-color, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.site-logo img {
+  height: 35px;
+
+  @media screen and (max-width: 575px) {
+    height: 28px;
+  }
+}
+
+.gx-toolbar {
+  position: fixed;
+  left: $side-nav-width;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  @include display-flex();
+  @include align-items(center);
+  padding: 17px 24px;
+  background-color: $gx-primary;
+  color: $white;
+  @include box-shadow(0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12));
+
+  & .search-bar {
+    margin-left: 100px;
+    margin-right: auto;
+    max-width: 400px;
+    width: 380px;
+
+    @media screen and (max-width: 991px) {
+      width: 280px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-left: 40px;
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    left: 0;
+  }
+}
+
+.gx-toolbar {
+  & .nav-searchbox {
+    & .search-bar {
+      margin-left: 0;
+      width: 280px;
+
+      @media screen and (max-width: 399px) {
+        width: 200px;
+      }
+    }
+
+    & .search-bar input {
+      @include transition($transition-base);
+      background-color: $white;
+      color: $body-color;
+      & + .search-icon {
+        & i {
+          color: rgba($body-color, 0.8);
+        }
+      }
+
+      &:focus {
+        background-color: transparent;
+        color: $body-color;
+        + .search-icon {
+          & i {
+            color: rgba($body-color, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-notifications {
+  margin: 0 -8px;
+  padding-left: 0;
+  list-style: none;
+
+  & > li {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0 8px;
+  }
+
+  & > li > a {
+    color: $white;
+    font-size: 24px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
+.quick-menu {
+  & .dropdown-menu {
+    padding: 5px 10px;
+    width: 350px;
+
+    & .gx-card-header {
+      margin: -5px -10px 5px;
+      padding: 10px 10px 10px 20px;
+      @include box-shadow($shadow-sm);
+      z-index: 10;
+    }
+
+    &:before {
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid $white;
+      top: -12px;
+      content: "";
+      height: 12px;
+      position: absolute;
+      right: 5px;
+      width: 14px;
+    }
+
+    @media screen and (max-width: 449px) {
+      width: 280px;
+    }
+
+    @media screen and (max-width: 359px) {
+      width: 240px;
+    }
+  }
+
+  & .messages-list .user-avatar {
+    position: relative;
+  }
+
+  & .messages-list .badge {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0;
+  }
+
+}
+
+.messages-list ul li {
+  position: relative;
+  padding: 20px 10px 14px;
+  border-bottom: 1px solid $gray-300;
+
+  & .user-name a {
+    color: $gx-primary;
+  }
+
+  & .sub-heading {
+    font-size: 11px;
+    margin-bottom: 6px;
+
+    &.mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 0 none;
+  }
+
+  & .gx-btn {
+    margin-right: 0;
+  }
+
+  & .gx-btn-xs {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
+
+.quick-menu {
+  & .icon-btn {
+    color: $white;
+  }
+
+  & .icons-alert {
+    position: relative;
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      z-index: 10;
+      width: 8px;
+      height: 8px;
+      background-color: $danger;
+      @include border-radius(50%);
+      @extend %pulse-effect;
+    }
+  }
+
+  & i.animated.infinite {
+    -moz-animation-iteration-count: 25;
+    -webkit-animation-iteration-count: 25;
+    -o-animation-iteration-count: 25;
+    animation-iteration-count: 25;
+  }
+}
+
+.dropdown-menu-perfectscrollbar,
+.dropdown-menu-perfectscrollbar1 {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gx-main-content .nav-searchbox {
+  & .icon-btn {
+    font-size: 20px;
+  }
+
+  & .dropdown-menu {
+    width: 200px;
+    left: auto;
+    right: 0;
+
+    @media screen and (max-width: 350px) {
+      width: 150px;
+    }
+  }
+}
+

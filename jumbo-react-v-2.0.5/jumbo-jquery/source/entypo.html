@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jumbo - A fully responsive, HTML5 based admin theme">
+    <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3, sass">
+    <title>Jumbo Admin</title>
+    <!-- Site favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <!-- /site favicon -->
+
+    <!-- Font Material stylesheet -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <!-- /font material stylesheet -->
+
+    <!-- Font Entypo stylesheet -->
+    <link rel="stylesheet" href="fonts/entypo/css/entypo.css">
+    <!-- /font Entypo stylesheet -->
+
+    <!-- Bootstrap stylesheet -->
+    <link href="css/jumbo-bootstrap.css" rel="stylesheet">
+    <!-- /bootstrap stylesheet -->
+
+    <!-- Perfect Scrollbar stylesheet -->
+    <link href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- /perfect scrollbar stylesheet -->
+
+    <!-- Jumbo-core stylesheet -->
+    <link href="css/jumbo-core.min.css" rel="stylesheet">
+    <!-- /jumbo-core stylesheet -->
+
+    <!-- Color-Theme stylesheet -->
+    <link id="override-css-id" href="css/theme-dark-indigo.css" rel="stylesheet">
+    <!-- Color-Theme stylesheet -->
+
+</head>
+
+<body id="body" data-theme="dark-indigo">
+
+<!-- Loader Backdrop -->
+<div class="loader-backdrop">
+    <!-- Loader -->
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+    <!-- /loader-->
+</div>
+<!-- loader backdrop -->
+
+<!-- Page container -->
+<div class="gx-container">
+
+    <!-- Page Sidebar -->
+    <div id="menu" class="side-nav gx-sidebar">
+        <div class="navbar-expand-lg">
+            <!-- Sidebar header  -->
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img class="user-avatar" alt="Domnic" src="http://via.placeholder.com/150x150">
+
+                    <div class="user-detail">
+                        <h4 class="user-name">
+                            <span class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="userAccount"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Robert Johnson
+                                </a>
+
+                                <span class="dropdown-menu dropdown-menu-right" aria-labelledby="userAccount">
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-account zmdi-hc-fw mr-2"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-settings zmdi-hc-fw mr-2"></i>
+                                        Setting
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-sign-in zmdi-hc-fw mr-2"></i>
+                                        Logout
+                                    </a>
+                                </span>
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /sidebar header -->
+
+            <!-- Main navigation -->
+            <div id="main-menu" class="main-menu navbar-collapse collapse">
+                <ul class="nav-menu">
+                    <li class="nav-header">Main</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="ecommerce.html"><span class="nav-text">eCommerce</span></a></li>
+                            <li><a href="news.html"><span class="nav-text">News</span></a></li>
+                            <li><a href="intranet.html"><span class="nav-text">Intranet</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-folder zmdi-hc-fw"></i>
+                            <span class="nav-text">Components</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="alerts.html"><span class="nav-text">Alerts</span></a></li>
+                            <li><a href="appbar.html"><span class="nav-text text-transform-none">App Bar</span></a></li>
+                            <li><a href="avatars.html"><span class="nav-text">Avatars</span></a></li>
+                            <li><a href="badge.html"><span class="nav-text">Badge</span></a></li>
+                            <li><a href="bottom-navigation.html"><span class="nav-text">Bottom Navigation</span></a></li>
+                            <li><a href="breadcrumbs.html"><span class="nav-text">Breadcrumbs</span></a></li>
+                            <li><a href="buttons.html"><span class="nav-text">Buttons</span></a></li>
+                            <li><a href="button-group.html"><span class="nav-text">Button Group</span></a></li>
+                            <li><a href="dropdown-menus.html"><span class="nav-text">Dropdown</span></a></li>
+                            <li><a href="cards.html"><span class="nav-text">Cards</span></a></li>
+                            <li><a href="carousel.html"><span class="nav-text">Carousel</span></a></li>
+                            <li><a href="dialogs.html"><span class="nav-text">Dialogs</span></a></li>
+                            <li><a href="pagination.html"><span class="nav-text">Pagination</span></a></li>
+                            <li><a href="popovers.html"><span class="nav-text">Popovers</span></a></li>
+                            <li><a href="progress.html"><span class="nav-text">Progress</span></a></li>
+                            <li><a href="tabs.html"><span class="nav-text">Tabs</span></a></li>
+                            <li><a href="tooltips.html"><span class="nav-text">Tooltips</span></a></li>
+                            <li><a href="typography.html"><span class="nav-text">Typography</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="widget.html">
+                            <i class="zmdi zmdi-widgets zmdi-hc-fw"></i>
+                            <span class="nav-text">Widgets</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="metrics.html">
+                            <i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>
+                            <span class="nav-text">Metrics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">View</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-web zmdi-hc-fw"></i>
+                            <span class="nav-text">Tables</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="basic-table.html"><span class="nav-text">Basic Table</span></a></li>
+                            <li><a href="datatable.html"><span class="nav-text">Data Table</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-swap-alt zmdi-hc-fw zmdi-hc-rotate-90"></i>
+                            <span class="nav-text">Time Line</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="timeline-default.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="timeline-with-icons.html"><span class="nav-text">Default With Icon</span></a></li>
+                            <li><a href="timeline-left-align.html"><span class="nav-text">Left Aligned</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-list zmdi-hc-fw"></i>
+                            <span class="nav-text">Custom Views</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="simple-view.html"><span class="nav-text">Plain List View</span></a></li>
+                            <li><a href="listdivider.html"><span class="nav-text">Plain List With Divider</span></a></li>
+                            <li><a href="cards-list-view.html"><span class="nav-text">Cards list View</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">From</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-book-image zmdi-hc-fw"></i>
+                            <span class="nav-text">Forms</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="basic-form.html"><span class="nav-text">Basic Form</span></a></li>
+                            <li><a href="advanced-plugins.html"><span class="nav-text">Advance Plugins</span></a></li>
+                            <li><a href="form-wizard.html"><span class="nav-text">Form Wizard</span></a></li>
+                            <li><a href="file-upload.html"><span class="nav-text">File Upload</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">Extensions</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-code-setting zmdi-hc-fw"></i>
+                            <span class="nav-text">Editors</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="editor-summernote.html"><span class="nav-text">Summernote Editor</span></a></li>
+                            <li><a href="editor-markdown.html"><span class="nav-text">Markdown Editor</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-brush zmdi-hc-fw"></i>
+                            <span class="nav-text">Pickers</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="date-time-pickers.html"><span class="nav-text">Date &amp; Time Pickers</span></a></li>
+                            <li><a href="color-pickers.html"><span class="nav-text">Color pickers</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-key zmdi-hc-fw"></i>
+                            <span class="nav-text">Extensions</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="drag-and-drop.html"><span class="nav-text">Drag and Drop</span></a></li>
+                            <li><a href="sweet-alert.html"><span class="nav-text">Sweet Alert</span></a></li>
+                            <li><a href="notification.html"><span class="nav-text">Notification</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-calendar zmdi-hc-fw"></i>
+                            <span class="nav-text">Calender</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="calendar-agenda.html"><span class="nav-text">Agenda</span></a></li>
+                            <li><a href="calendar-basic.html"><span class="nav-text">Basic</span></a></li>
+                            <li><a href="calendar-default.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="calendar-background-events.html"><span class="nav-text">Background Event</span></a></li>
+                            <li><a href="calendar-external-dragging.html"><span class="nav-text">External Dragging</span></a></li>
+                            <li><a href="calendar-gcal.html"><span class="nav-text">Gcal</span></a></li>
+                            <li><a href="calendar-list-views.html"><span class="nav-text">List View</span></a></li>
+                            <li><a href="calendar-locales.html"><span class="nav-text">Locales</span></a></li>
+                            <li><a href="calendar-selectable.html"><span class="nav-text">Selectable</span></a></li>
+                            <li><a href="calendar-themes.html"><span class="nav-text">Theme</span></a></li>
+                            <li><a href="calendar-week-numbers.html"><span class="nav-text">Week Numbers</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-chart zmdi-hc-fw"></i>
+                            <span class="nav-text">Chart</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="flot-charts.html"><span class="nav-text">Flot Chart</span></a></li>
+                            <li><a href="morris-charts.html"><span class="nav-text">Morris Chart</span></a></li>
+                            <li><a href="peity-charts.html"><span class="nav-text">Peity Chart</span></a></li>
+                            <li><a href="sparkline-charts.html"><span class="nav-text">Sparkline Chart</span></a></li>
+                            <li><a href="charts-js.html"><span class="nav-text">JS Chart</span></a></li>
+                            <li><a href="chartist.html"><span class="nav-text">Chartist</span></a></li>
+                            <li><a href="c3-chart.html"><span class="nav-text">C3 Chart</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="vector-map.html">
+                            <i class="zmdi zmdi-google-maps zmdi-hc-fw"></i>
+                            <span class="nav-text">Vector Map</span>
+                            <span class="badge badge-secondary float-right">NEW</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">Modules</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-shopping-cart zmdi-hc-fw"></i>
+                            <span class="nav-text">eCommerce</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="products-detail.html"><span class="nav-text">Product Detail</span></a></li>
+                            <li><a href="products-grid.html"><span class="nav-text">Product Grid</span></a></li>
+                            <li><a href="products-list.html"><span class="nav-text">Product List</span></a></li>
+                            <li><a href="shopping-cart.html"><span class="nav-text">Shopping Cart</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-collection-item-8 zmdi-hc-fw"></i>
+                            <span class="nav-text">App Module</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="login1.html"><span class="nav-text">Login Page</span></a></li>
+                            <li><a href="signup1.html"><span class="nav-text">Signup Page</span></a></li>
+                            <li><a href="forgot-password1.html"><span class="nav-text">Forgot Password</span></a></li>
+                            <li><a href="lock-screen1.html"><span class="nav-text">Lock Screen</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="todo.html">
+                            <i class="zmdi zmdi-check-square zmdi-hc-fw"></i>
+                            <span class="nav-text">To-Do</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="mail.html">
+                            <i class="zmdi zmdi-email zmdi-hc-fw"></i>
+                            <span class="nav-text">Mail</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="chat-start.html">
+                            <i class="zmdi zmdi-comment zmdi-hc-fw"></i>
+                            <span class="nav-text">Chat</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="contact.html">
+                            <i class="zmdi zmdi-account-box zmdi-hc-fw"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">Extras</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-web zmdi-hc-fw"></i>
+                            <span class="nav-text">Icons</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="entypo.html"><span class="nav-text">Entypo</span></a></li>
+                            <li><a href="font-awesome.html"><span class="nav-text">Font Awesome</span></a></li>
+                            <li><a href="material-font.html"><span class="nav-text">Material</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-collection-bookmark zmdi-hc-fw zmdi-hc-rotate-90"></i>
+                            <span class="nav-text">Extra Elements</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="callouts.html"><span class="nav-text">Callouts</span></a></li>
+                            <li><a href="pricing-table.html"><span class="nav-text">Pricing Table</span></a></li>
+                            <li><a href="testimonials.html"><span class="nav-text">Testimonials</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-pages zmdi-hc-fw"></i>
+                            <span class="nav-text">Extra Pages</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="aboutus.html"><span class="nav-text">About Us</span></a></li>
+                            <li><a href="blog.html"><span class="nav-text">Blog</span></a></li>
+                            <li><a href="contact-us.html"><span class="nav-text">Contact Us</span></a></li>
+                            <li><a href="faq.html"><span class="nav-text">FAQ</span></a></li>
+                            <li><a href="portfolio.html"><span class="nav-text">Portfolio</span></a></li>
+                            <li><a href="error-page-404.html"><span class="nav-text">404 Error Page</span></a></li>
+                            <li><a href="error-page-500.html"><span class="nav-text">500 Error Page</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-device-hub zmdi-hc-fw"></i>
+                            <span class="nav-text">Menu Levels</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="nav-text">Level 1</span>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a href="javascript:void(0)">
+                                    <span class="nav-text">Level 1</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="nav-text">Level 2</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu">
+                                        <a href="javascript:void(0)">
+                                            <span class="nav-text">Level 2</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="nav-text">Level 3</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="nav-text">Level 3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /main navigation -->
+        </div>
+    </div>
+    <!-- /page sidebar -->
+
+    <!-- Main Container -->
+    <div class="gx-main-container">
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="gx-toolbar">
+                <div class="sidebar-mobile-menu d-block d-lg-none">
+                    <a class="gx-menu-icon menu-toggle" href="#menu">
+                        <span class="menu-icon"></span>
+                    </a>
+                </div>
+
+                <a class="site-logo" href="index.html">
+                    <img src="http://via.placeholder.com/190x65" alt="Jumbo" title="Jumbo">
+                </a>
+
+                <div class="search-bar right-side-icon bg-transparent d-none d-sm-block">
+                    <div class="form-group">
+                        <input class="form-control border-0" placeholder="" value="" type="search">
+                        <button class="search-icon"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+                    </div>
+                </div>
+
+                <ul class="quick-menu header-notifications ml-auto">
+
+                    <li class="nav-searchbox dropdown d-inline-block d-sm-none">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block icon-btn" aria-expanded="false">
+                            <i class="zmdi zmdi-search zmdi-hc-fw"></i>
+                        </a>
+                        <div aria-hidden="true" class="p-0 dropdown-menu dropdown-menu-right search-bar right-side-icon search-dropdown">
+                            <div class="form-group">
+                                <input class="form-control border-0" placeholder="" value="" type="search">
+                                <button class="search-icon"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block" aria-expanded="true">
+                            <i class="zmdi zmdi-notifications-active icons-alert animated infinite wobble"></i>
+                        </a>
+
+                        <div role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                            <div class="gx-card-header d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="card-heading">Notifications</h3>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu-perfectscrollbar">
+                                <div class="messages-list">
+                                    <ul class="list-unstyled">
+                                        <li class="media">
+                                            <img alt="stella-johnson" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Stella Johnson has recently posted an
+                                                    album</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-thumb-up text-blue zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>4:10 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="domnic-harris" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Alex Brown has shared Martin Guptil's
+                                                    post</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-comment-text text-grey zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:18 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="domnic-brown" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Domnic Brown has sent you a group invitation
+                                                    for Global Health</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-card-giftcard text-info zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:36 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="john-smith" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">John Smith has birthday today</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-cake text-warning zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:54 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="jimmy-jo" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Chris has updated his profile picture</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-account-box-o text-grey zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:25 PM</small></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block" aria-expanded="true">
+                            <i class="zmdi zmdi-comment-alt-text icons-alert zmdi-hc-fw"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" data-placement="bottom-end" data-x-out-of-boundaries="">
+                            <div class="gx-card-header d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="card-heading">Messages</h3>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu-perfectscrollbar1">
+                                <div class="messages-list">
+                                    <ul class="list-unstyled">
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="Domnic Brown" src="http://via.placeholder.com/150x150" class="rounded-circle size-40 user-avatar">
+                                                <span class="badge badge-danger rounded-circle">5</span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">Domnic Brown</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>6:19 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">There are many variations of passages of...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="John Smith" src="http://via.placeholder.com/150x150" class="rounded-circle size-40 user-avatar">
+                                                <span class="badge badge-danger rounded-circle"></span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">John Smith</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>4:18 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">Lorem Ipsum is simply dummy text of the...</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="John Smith" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+                                                <span class="badge badge-danger rounded-circle">8</span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">John Smith</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>7:10 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">The point of using Lorem Ipsum is that it
+                                                    has...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="alex dolgove" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+                                                <span class="badge badge-danger rounded-circle"></span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">alex dolgove</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>5:10 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">It is a long established fact that a reader
+                                                    will...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="Domnic Harris" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+
+                                                <span class="badge badge-danger rounded-circle">3</span>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">Domnic Harris</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>7:35 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">All the Lorem Ipsum generators on the...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- /main header -->
+
+        <!-- Main Content -->
+        <div class="gx-main-content">
+            <!--gx-wrapper-->
+            <div class="gx-wrapper">
+                <div class="page-heading d-sm-flex justify-content-sm-between align-items-sm-center">
+                    <h2 class="title mb-3 mb-sm-0">Entypo Design Icons</h2>
+                    <nav class="mb-0 breadcrumb">
+                        <a href="index.html" class="breadcrumb-item">Jumbo</a>
+                        <a href="entypo.html" class="breadcrumb-item">Icons</a>
+                        <span class="active breadcrumb-item">Entypo</span>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gx-card  animated fadeInUp go">
+                            <div class="gx-card-header">
+                                <h3 class="card-title">Entypo icon set</h3>
+                            </div>
+                            <div class="gx-card-body">
+                                <div class="row icons-showcase">
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-note"></i> icon-note</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-note-beamed"></i> icon-note-beamed
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-music"></i> icon-music</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-search"></i> icon-search</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flashlight"></i> icon-flashlight</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mail"></i> icon-mail</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-heart"></i> icon-heart</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-heart-empty"></i> icon-heart-empty
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-star"></i> icon-star</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-star-empty"></i> icon-star-empty</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-user"></i> icon-user</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-users"></i> icon-users</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-user-add"></i> icon-user-add</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-video"></i> icon-video</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-picture"></i> icon-picture</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-camera"></i> icon-camera</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-layout"></i> icon-layout</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-menu"></i> icon-menu</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-check"></i> icon-check</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cancel"></i> icon-cancel</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cancel-circled"></i>
+                                        icon-cancel-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cancel-squared"></i>
+                                        icon-cancel-squared
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-plus"></i> icon-plus</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-plus-circled"></i> icon-plus-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-plus-squared"></i> icon-plus-squared
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-minus"></i> icon-minus</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-minus-circled"></i> icon-minus-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-minus-squared"></i> icon-minus-squared
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-help"></i> icon-help</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-help-circled"></i> icon-help-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-info"></i> icon-info</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-info-circled"></i> icon-info-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-back"></i> icon-back</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-home"></i> icon-home</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-link"></i> icon-link</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-attach"></i> icon-attach</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lock"></i> icon-lock</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lock-open"></i> icon-lock-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-eye"></i> icon-eye</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-tag"></i> icon-tag</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-bookmark"></i> icon-bookmark</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-bookmarks"></i> icon-bookmarks</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flag"></i> icon-flag</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-thumbs-up"></i> icon-thumbs-up</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-thumbs-down"></i> icon-thumbs-down
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-download"></i> icon-download</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-upload"></i> icon-upload</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-upload-cloud"></i> icon-upload-cloud
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-reply"></i> icon-reply</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-reply-all"></i> icon-reply-all</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-forward"></i> icon-forward</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-quote"></i> icon-quote</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-code"></i> icon-code</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-export"></i> icon-export</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-pencil"></i> icon-pencil</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-feather"></i> icon-feather</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-print"></i> icon-print</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-retweet"></i> icon-retweet</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-keyboard"></i> icon-keyboard</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-comment"></i> icon-comment</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-chat"></i> icon-chat</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-bell"></i> icon-bell</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-attention"></i> icon-attention</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-alert"></i> icon-alert</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-vcard"></i> icon-vcard</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-address"></i> icon-address</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-location"></i> icon-location</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-map"></i> icon-map</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-direction"></i> icon-direction</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-compass"></i> icon-compass</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cup"></i> icon-cup</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-trash"></i> icon-trash</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-doc"></i> icon-doc</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-docs"></i> icon-docs</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-doc-landscape"></i> icon-doc-landscape
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-doc-text"></i> icon-doc-text</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-doc-text-inv"></i> icon-doc-text-inv
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-newspaper"></i> icon-newspaper</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-book-open"></i> icon-book-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-book"></i> icon-book</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-folder"></i> icon-folder</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-archive"></i> icon-archive</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-box"></i> icon-box</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-rss"></i> icon-rss</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-phone"></i> icon-phone</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cog"></i> icon-cog</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-tools"></i> icon-tools</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-share"></i> icon-share</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-shareable"></i> icon-shareable</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-basket"></i> icon-basket</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-bag"></i> icon-bag</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-calendar"></i> icon-calendar</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-login"></i> icon-login</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-logout"></i> icon-logout</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mic"></i> icon-mic</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mute"></i> icon-mute</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-sound"></i> icon-sound</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-volume"></i> icon-volume</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-clock"></i> icon-clock</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-hourglass"></i> icon-hourglass</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lamp"></i> icon-lamp</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-light-down"></i> icon-light-down</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-light-up"></i> icon-light-up</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-adjust"></i> icon-adjust</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-block"></i> icon-block</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-resize-full"></i> icon-resize-full
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-resize-small"></i> icon-resize-small
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-popup"></i> icon-popup</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-publish"></i> icon-publish</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-window"></i> icon-window</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-arrow-combo"></i> icon-arrow-combo
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-circled"></i> icon-down-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-circled"></i> icon-left-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-circled"></i> icon-right-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-circled"></i> icon-up-circled</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-open"></i> icon-down-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-open"></i> icon-left-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-open"></i> icon-right-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-open"></i> icon-up-open</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-open-mini"></i>
+                                        icon-down-open-mini
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-open-mini"></i>
+                                        icon-left-open-mini
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-open-mini"></i>
+                                        icon-right-open-mini
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-open-mini"></i> icon-up-open-mini
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-open-big"></i> icon-down-open-big
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-open-big"></i> icon-left-open-big
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-open-big"></i>
+                                        icon-right-open-big
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-open-big"></i> icon-up-open-big
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down"></i> icon-down</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left"></i> icon-left</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right"></i> icon-right</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up"></i> icon-up</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-dir"></i> icon-down-dir</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-dir"></i> icon-left-dir</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-dir"></i> icon-right-dir</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-dir"></i> icon-up-dir</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-bold"></i> icon-down-bold</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-bold"></i> icon-left-bold</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-bold"></i> icon-right-bold</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-bold"></i> icon-up-bold</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-down-thin"></i> icon-down-thin</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-left-thin"></i> icon-left-thin</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-right-thin"></i> icon-right-thin</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-up-thin"></i> icon-up-thin</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-ccw"></i> icon-ccw</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cw"></i> icon-cw</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-arrows-ccw"></i> icon-arrows-ccw</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-level-down"></i> icon-level-down</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-level-up"></i> icon-level-up</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-shuffle"></i> icon-shuffle</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-loop"></i> icon-loop</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-switch"></i> icon-switch</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-play"></i> icon-play</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-stop"></i> icon-stop</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-pause"></i> icon-pause</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-record"></i> icon-record</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-to-end"></i> icon-to-end</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-to-start"></i> icon-to-start</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-fast-forward"></i> icon-fast-forward
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-fast-backward"></i> icon-fast-backward
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-progress-0"></i> icon-progress-0</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-progress-1"></i> icon-progress-1</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-progress-2"></i> icon-progress-2</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-progress-3"></i> icon-progress-3</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-target"></i> icon-target</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-palette"></i> icon-palette</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-list"></i> icon-list</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-list-add"></i> icon-list-add</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-signal"></i> icon-signal</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-trophy"></i> icon-trophy</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-battery"></i> icon-battery</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-back-in-time"></i> icon-back-in-time
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-monitor"></i> icon-monitor</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mobile"></i> icon-mobile</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-network"></i> icon-network</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cd"></i> icon-cd</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-inbox"></i> icon-inbox</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-install"></i> icon-install</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-globe"></i> icon-globe</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cloud"></i> icon-cloud</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cloud-thunder"></i> icon-cloud-thunder
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flash"></i> icon-flash</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-moon"></i> icon-moon</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flight"></i> icon-flight</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-paper-plane"></i> icon-paper-plane
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-leaf"></i> icon-leaf</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lifebuoy"></i> icon-lifebuoy</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mouse"></i> icon-mouse</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-briefcase"></i> icon-briefcase</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-suitcase"></i> icon-suitcase</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dot"></i> icon-dot</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dot-2"></i> icon-dot-2</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dot-3"></i> icon-dot-3</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-brush"></i> icon-brush</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-magnet"></i> icon-magnet</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-infinity"></i> icon-infinity</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-erase"></i> icon-erase</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-chart-pie"></i> icon-chart-pie</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-chart-line"></i> icon-chart-line</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-chart-bar"></i> icon-chart-bar</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-chart-area"></i> icon-chart-area</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-tape"></i> icon-tape</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-graduation-cap"></i>
+                                        icon-graduation-cap
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-language"></i> icon-language</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-ticket"></i> icon-ticket</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-water"></i> icon-water</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-droplet"></i> icon-droplet</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-air"></i> icon-air</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-credit-card"></i> icon-credit-card
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-floppy"></i> icon-floppy</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-clipboard"></i> icon-clipboard</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-megaphone"></i> icon-megaphone</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-database"></i> icon-database</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-drive"></i> icon-drive</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-bucket"></i> icon-bucket</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-thermometer"></i> icon-thermometer
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-key"></i> icon-key</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flow-cascade"></i> icon-flow-cascade
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flow-branch"></i> icon-flow-branch
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flow-tree"></i> icon-flow-tree</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flow-line"></i> icon-flow-line</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flow-parallel"></i> icon-flow-parallel
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-rocket"></i> icon-rocket</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-gauge"></i> icon-gauge</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-traffic-cone"></i> icon-traffic-cone
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc"></i> icon-cc</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-by"></i> icon-cc-by</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-nc"></i> icon-cc-nc</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-nc-eu"></i> icon-cc-nc-eu</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-nc-jp"></i> icon-cc-nc-jp</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-sa"></i> icon-cc-sa</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-nd"></i> icon-cc-nd</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-pd"></i> icon-cc-pd</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-zero"></i> icon-cc-zero</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-share"></i> icon-cc-share</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-cc-remix"></i> icon-cc-remix</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-logo-db"></i> icon-logo-db</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-github"></i> icon-github</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-github-circled"></i>
+                                        icon-github-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flickr"></i> icon-flickr</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flickr-circled"></i>
+                                        icon-flickr-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-vimeo"></i> icon-vimeo</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-vimeo-circled"></i> icon-vimeo-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-twitter"></i> icon-twitter</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-twitter-circled"></i>
+                                        icon-twitter-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-facebook"></i> icon-facebook</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-facebook-circled"></i>
+                                        icon-facebook-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-facebook-squared"></i>
+                                        icon-facebook-squared
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-gplus"></i> icon-gplus</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-gplus-circled"></i> icon-gplus-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-pinterest"></i> icon-pinterest</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-pinterest-circled"></i>
+                                        icon-pinterest-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-tumblr"></i> icon-tumblr</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-tumblr-circled"></i>
+                                        icon-tumblr-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-linkedin"></i> icon-linkedin</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-linkedin-circled"></i>
+                                        icon-linkedin-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dribbble"></i> icon-dribbble</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dribbble-circled"></i>
+                                        icon-dribbble-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-stumbleupon"></i> icon-stumbleupon
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-stumbleupon-circled"></i>
+                                        icon-stumbleupon-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lastfm"></i> icon-lastfm</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-lastfm-circled"></i>
+                                        icon-lastfm-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-rdio"></i> icon-rdio</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-rdio-circled"></i> icon-rdio-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-spotify"></i> icon-spotify</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-spotify-circled"></i>
+                                        icon-spotify-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-qq"></i> icon-qq</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-instagrem"></i> icon-instagrem</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-dropbox"></i> icon-dropbox</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-evernote"></i> icon-evernote</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-flattr"></i> icon-flattr</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-skype"></i> icon-skype</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-skype-circled"></i> icon-skype-circled
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-renren"></i> icon-renren</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-sina-weibo"></i> icon-sina-weibo</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-paypal"></i> icon-paypal</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-picasa"></i> icon-picasa</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-soundcloud"></i> icon-soundcloud</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-mixi"></i> icon-mixi</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-behance"></i> icon-behance</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-google-circles"></i>
+                                        icon-google-circles
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-vkontakte"></i> icon-vkontakte</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-smashing"></i> icon-smashing</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-sweden"></i> icon-sweden</div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12"><i class="icon-db-shape"></i> icon-db-shape</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/gx-wrapper-->
+
+
+            <!-- Footer -->
+            <footer class="gx-footer">
+                <div class="d-flex flex-row justify-content-between">
+                    <p> Copyright Company Name © 2018</p>
+                    <a href="https://themeforest.net/item/jumbo-admin-responsive-admin-dashboard-template/21368029" target="_blank" class="btn-link text-uppercase">Buy Now</a>
+                </div>
+            </footer>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /main container -->
+
+    <!-- Theme Options Button -->
+    <div id="colorTheme" class="theme-option">
+        <a href="javascript:void(0)" class="action-btn">
+            <i class="zmdi zmdi-settings zmdi-hc-spin text-white"></i>
+        </a>
+    </div>
+    <!-- /Theme Options Button -->
+
+</div>
+<!-- /page container -->
+
+<!-- Right Sidebar-->
+<div id="colorSidebar" class="app-sidebar-content right-sidebar">
+    <div class="color-theme">
+        <div class="color-theme-header">
+            <h3 class="color-theme-title">Service Panel</h3>
+            <a href="javascript:void(0)" class="action-btn" id="close-setting-panel">
+                <i class="zmdi zmdi-close text-white"></i>
+            </a>
+        </div>
+
+        <div class="color-theme-body">
+            <h3>Light Sidenav</h3>
+            <ul class="color-option">
+                <li>
+                    <a href="javascript:void(0)" class="bg-indigo gx-theme" data-theme="indigo"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-cyan gx-theme" data-theme="cyan"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-amber gx-theme" data-theme="amber"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-orange gx-theme" data-theme="deep-orange"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-pink gx-theme" data-theme="pink"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-blue gx-theme" data-theme="blue"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-purple gx-theme" data-theme="deep-purple"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-green gx-theme" data-theme="green"></a>
+                </li>
+            </ul>
+            <h3>Dark Sidenav</h3>
+            <ul class="color-option cr-op-dark-sidebar">
+                <li>
+                    <a href="javascript:void(0)" class="bg-indigo gx-theme" data-theme="dark-indigo"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-cyan gx-theme" data-theme="dark-cyan"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-amber gx-theme" data-theme="dark-amber"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-orange gx-theme" data-theme="dark-deep-orange"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-pink gx-theme" data-theme="dark-pink"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-blue gx-theme" data-theme="dark-blue"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-purple gx-theme" data-theme="dark-deep-purple"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-green gx-theme" data-theme="dark-green"></a>
+                </li>
+            </ul>
+            <h3>Dark Theme</h3>
+            <div class="material-switch">
+                <input id="switch-dark-theme" name="switch-dark-theme" type="checkbox" data-theme="dark" />
+                <label for="switch-dark-theme" class="label-default"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Right Sidebar-->
+
+<!-- Menu Backdrop -->
+<div class="menu-backdrop fade"></div>
+<!-- /menu backdrop -->
+
+<!--Load JQuery-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--Bootstrap JQuery-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--Perfect Scrollbar JQuery-->
+<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<!--Big Slide JQuery-->
+<script src="node_modules/bigslide/dist/bigSlide.min.js"></script>
+<!--Custom JQuery-->
+<script src="js/functions.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+{
+  "name": "FloatingActionButtons",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FloatingActionButtons.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

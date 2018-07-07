@@ -1,0 +1,9 @@
+{
+  "name": "InsetDividers",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InsetDividers.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

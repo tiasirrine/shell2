@@ -1,0 +1,9 @@
+{
+  "name": "IconAvatars",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./IconAvatars.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

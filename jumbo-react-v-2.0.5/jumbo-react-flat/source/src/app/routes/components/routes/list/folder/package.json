@@ -1,0 +1,9 @@
+{
+  "name": "FolderList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FolderList.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

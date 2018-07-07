@@ -1,0 +1,2003 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jumbo - A fully responsive, HTML5 based admin theme">
+    <meta name="keywords"
+          content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3, sass">
+    <title>Jumbo Admin</title>
+    <!-- Site favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <!-- /site favicon -->
+
+    <!-- Font Material stylesheet -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <!-- /font material stylesheet -->
+
+    <!-- Bootstrap stylesheet -->
+    <link href="css/jumbo-bootstrap.css" rel="stylesheet">
+    <!-- /bootstrap stylesheet -->
+
+    <!-- Perfect Scrollbar stylesheet -->
+    <link href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- /perfect scrollbar stylesheet -->
+
+    <!-- c3 Chart's css file -->
+    <link href="node_modules/c3/c3.min.css" rel="stylesheet">
+    <!-- /c3 chart stylesheet -->
+
+    <!-- sprite-flags-master stylesheet -->
+    <link rel="stylesheet" href="fonts/sprite-flags-master/sprite-flags-32x32.css">
+    <!-- /sprite-flags-master stylesheet -->
+
+    <!-- Chartists Chart's css file -->
+    <link href="node_modules/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- /chartists chart stylesheet -->
+
+    <!-- jqvmap stylesheet -->
+    <link href="node_modules/jqvmap/dist/jqvmap.css" rel="stylesheet">
+    <!-- /jqvmap stylesheet -->
+
+    <!-- Jumbo-core stylesheet -->
+    <link href="css/jumbo-core.min.css" rel="stylesheet">
+    <!-- /jumbo-core stylesheet -->
+
+    <!-- Color-Theme stylesheet -->
+    <link id="override-css-id" href="css/theme-dark-indigo.css" rel="stylesheet">
+    <!-- Color-Theme stylesheet -->
+
+</head>
+
+<body id="body" data-theme="dark-indigo">
+
+<!-- Loader Backdrop -->
+<div class="loader-backdrop">
+    <!-- Loader -->
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+    <!-- /loader-->
+</div>
+<!-- loader backdrop -->
+
+<!-- Page container -->
+<div class="gx-container">
+
+    <!-- Page Sidebar -->
+    <div id="menu" class="side-nav gx-sidebar">
+        <div class="navbar-expand-lg">
+            <!-- Sidebar header  -->
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img class="user-avatar" alt="Domnic" src="http://via.placeholder.com/150x150">
+
+                    <div class="user-detail">
+                        <h4 class="user-name">
+                            <span class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="userAccount"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Robert Johnson
+                                </a>
+
+                                <span class="dropdown-menu dropdown-menu-right" aria-labelledby="userAccount">
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-account zmdi-hc-fw mr-2"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-settings zmdi-hc-fw mr-2"></i>
+                                        Setting
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-sign-in zmdi-hc-fw mr-2"></i>
+                                        Logout
+                                    </a>
+                                </span>
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /sidebar header -->
+
+            <!-- Main navigation -->
+            <div id="main-menu" class="main-menu navbar-collapse collapse">
+                <ul class="nav-menu">
+                    <li class="nav-header">Main</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="ecommerce.html"><span class="nav-text">eCommerce</span></a></li>
+                            <li><a href="news.html"><span class="nav-text">News</span></a></li>
+                            <li><a href="intranet.html"><span class="nav-text">Intranet</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-folder zmdi-hc-fw"></i>
+                            <span class="nav-text">Components</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="alerts.html"><span class="nav-text">Alerts</span></a></li>
+                            <li><a href="appbar.html"><span class="nav-text text-transform-none">App Bar</span></a></li>
+                            <li><a href="avatars.html"><span class="nav-text">Avatars</span></a></li>
+                            <li><a href="badge.html"><span class="nav-text">Badge</span></a></li>
+                            <li><a href="bottom-navigation.html"><span class="nav-text">Bottom Navigation</span></a></li>
+                            <li><a href="breadcrumbs.html"><span class="nav-text">Breadcrumbs</span></a></li>
+                            <li><a href="buttons.html"><span class="nav-text">Buttons</span></a></li>
+                            <li><a href="button-group.html"><span class="nav-text">Button Group</span></a></li>
+                            <li><a href="dropdown-menus.html"><span class="nav-text">Dropdown</span></a></li>
+                            <li><a href="cards.html"><span class="nav-text">Cards</span></a></li>
+                            <li><a href="carousel.html"><span class="nav-text">Carousel</span></a></li>
+                            <li><a href="dialogs.html"><span class="nav-text">Dialogs</span></a></li>
+                            <li><a href="pagination.html"><span class="nav-text">Pagination</span></a></li>
+                            <li><a href="popovers.html"><span class="nav-text">Popovers</span></a></li>
+                            <li><a href="progress.html"><span class="nav-text">Progress</span></a></li>
+                            <li><a href="tabs.html"><span class="nav-text">Tabs</span></a></li>
+                            <li><a href="tooltips.html"><span class="nav-text">Tooltips</span></a></li>
+                            <li><a href="typography.html"><span class="nav-text">Typography</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="widget.html">
+                            <i class="zmdi zmdi-widgets zmdi-hc-fw"></i>
+                            <span class="nav-text">Widgets</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="metrics.html">
+                            <i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>
+                            <span class="nav-text">Metrics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">View</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-web zmdi-hc-fw"></i>
+                            <span class="nav-text">Tables</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="basic-table.html"><span class="nav-text">Basic Table</span></a></li>
+                            <li><a href="datatable.html"><span class="nav-text">Data Table</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-swap-alt zmdi-hc-fw zmdi-hc-rotate-90"></i>
+                            <span class="nav-text">Time Line</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="timeline-default.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="timeline-with-icons.html"><span class="nav-text">Default With Icon</span></a></li>
+                            <li><a href="timeline-left-align.html"><span class="nav-text">Left Aligned</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-list zmdi-hc-fw"></i>
+                            <span class="nav-text">Custom Views</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="simple-view.html"><span class="nav-text">Plain List View</span></a></li>
+                            <li><a href="listdivider.html"><span class="nav-text">Plain List With Divider</span></a></li>
+                            <li><a href="cards-list-view.html"><span class="nav-text">Cards list View</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">From</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-book-image zmdi-hc-fw"></i>
+                            <span class="nav-text">Forms</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="basic-form.html"><span class="nav-text">Basic Form</span></a></li>
+                            <li><a href="advanced-plugins.html"><span class="nav-text">Advance Plugins</span></a></li>
+                            <li><a href="form-wizard.html"><span class="nav-text">Form Wizard</span></a></li>
+                            <li><a href="file-upload.html"><span class="nav-text">File Upload</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">Extensions</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-code-setting zmdi-hc-fw"></i>
+                            <span class="nav-text">Editors</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="editor-summernote.html"><span class="nav-text">Summernote Editor</span></a></li>
+                            <li><a href="editor-markdown.html"><span class="nav-text">Markdown Editor</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-brush zmdi-hc-fw"></i>
+                            <span class="nav-text">Pickers</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="date-time-pickers.html"><span class="nav-text">Date &amp; Time Pickers</span></a></li>
+                            <li><a href="color-pickers.html"><span class="nav-text">Color pickers</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-key zmdi-hc-fw"></i>
+                            <span class="nav-text">Extensions</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="drag-and-drop.html"><span class="nav-text">Drag and Drop</span></a></li>
+                            <li><a href="sweet-alert.html"><span class="nav-text">Sweet Alert</span></a></li>
+                            <li><a href="notification.html"><span class="nav-text">Notification</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-calendar zmdi-hc-fw"></i>
+                            <span class="nav-text">Calender</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="calendar-agenda.html"><span class="nav-text">Agenda</span></a></li>
+                            <li><a href="calendar-basic.html"><span class="nav-text">Basic</span></a></li>
+                            <li><a href="calendar-default.html"><span class="nav-text">Default</span></a></li>
+                            <li><a href="calendar-background-events.html"><span class="nav-text">Background Event</span></a></li>
+                            <li><a href="calendar-external-dragging.html"><span class="nav-text">External Dragging</span></a></li>
+                            <li><a href="calendar-gcal.html"><span class="nav-text">Gcal</span></a></li>
+                            <li><a href="calendar-list-views.html"><span class="nav-text">List View</span></a></li>
+                            <li><a href="calendar-locales.html"><span class="nav-text">Locales</span></a></li>
+                            <li><a href="calendar-selectable.html"><span class="nav-text">Selectable</span></a></li>
+                            <li><a href="calendar-themes.html"><span class="nav-text">Theme</span></a></li>
+                            <li><a href="calendar-week-numbers.html"><span class="nav-text">Week Numbers</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-chart zmdi-hc-fw"></i>
+                            <span class="nav-text">Chart</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="flot-charts.html"><span class="nav-text">Flot Chart</span></a></li>
+                            <li><a href="morris-charts.html"><span class="nav-text">Morris Chart</span></a></li>
+                            <li><a href="peity-charts.html"><span class="nav-text">Peity Chart</span></a></li>
+                            <li><a href="sparkline-charts.html"><span class="nav-text">Sparkline Chart</span></a></li>
+                            <li><a href="charts-js.html"><span class="nav-text">JS Chart</span></a></li>
+                            <li><a href="chartist.html"><span class="nav-text">Chartist</span></a></li>
+                            <li><a href="c3-chart.html"><span class="nav-text">C3 Chart</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="vector-map.html">
+                            <i class="zmdi zmdi-google-maps zmdi-hc-fw"></i>
+                            <span class="nav-text">Vector Map</span>
+                            <span class="badge badge-secondary float-right">NEW</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">Modules</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-shopping-cart zmdi-hc-fw"></i>
+                            <span class="nav-text">eCommerce</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="products-detail.html"><span class="nav-text">Product Detail</span></a></li>
+                            <li><a href="products-grid.html"><span class="nav-text">Product Grid</span></a></li>
+                            <li><a href="products-list.html"><span class="nav-text">Product List</span></a></li>
+                            <li><a href="shopping-cart.html"><span class="nav-text">Shopping Cart</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-collection-item-8 zmdi-hc-fw"></i>
+                            <span class="nav-text">App Module</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="login1.html"><span class="nav-text">Login Page</span></a></li>
+                            <li><a href="signup1.html"><span class="nav-text">Signup Page</span></a></li>
+                            <li><a href="forgot-password1.html"><span class="nav-text">Forgot Password</span></a></li>
+                            <li><a href="lock-screen1.html"><span class="nav-text">Lock Screen</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="todo.html">
+                            <i class="zmdi zmdi-check-square zmdi-hc-fw"></i>
+                            <span class="nav-text">To-Do</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="mail.html">
+                            <i class="zmdi zmdi-email zmdi-hc-fw"></i>
+                            <span class="nav-text">Mail</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="chat-start.html">
+                            <i class="zmdi zmdi-comment zmdi-hc-fw"></i>
+                            <span class="nav-text">Chat</span>
+                        </a>
+                    </li>
+                    <li class="menu no-arrow">
+                        <a href="contact.html">
+                            <i class="zmdi zmdi-account-box zmdi-hc-fw"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-header">Extras</li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-view-web zmdi-hc-fw"></i>
+                            <span class="nav-text">Icons</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="entypo.html"><span class="nav-text">Entypo</span></a></li>
+                            <li><a href="font-awesome.html"><span class="nav-text">Font Awesome</span></a></li>
+                            <li><a href="material-font.html"><span class="nav-text">Material</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-collection-bookmark zmdi-hc-fw zmdi-hc-rotate-90"></i>
+                            <span class="nav-text">Extra Elements</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="callouts.html"><span class="nav-text">Callouts</span></a></li>
+                            <li><a href="pricing-table.html"><span class="nav-text">Pricing Table</span></a></li>
+                            <li><a href="testimonials.html"><span class="nav-text">Testimonials</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-pages zmdi-hc-fw"></i>
+                            <span class="nav-text">Extra Pages</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="aboutus.html"><span class="nav-text">About Us</span></a></li>
+                            <li><a href="blog.html"><span class="nav-text">Blog</span></a></li>
+                            <li><a href="contact-us.html"><span class="nav-text">Contact Us</span></a></li>
+                            <li><a href="faq.html"><span class="nav-text">FAQ</span></a></li>
+                            <li><a href="portfolio.html"><span class="nav-text">Portfolio</span></a></li>
+                            <li><a href="error-page-404.html"><span class="nav-text">404 Error Page</span></a></li>
+                            <li><a href="error-page-500.html"><span class="nav-text">500 Error Page</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="javascript:void(0)">
+                            <i class="zmdi zmdi-device-hub zmdi-hc-fw"></i>
+                            <span class="nav-text">Menu Levels</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="nav-text">Level 1</span>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a href="javascript:void(0)">
+                                    <span class="nav-text">Level 1</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="nav-text">Level 2</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu">
+                                        <a href="javascript:void(0)">
+                                            <span class="nav-text">Level 2</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="nav-text">Level 3</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="nav-text">Level 3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /main navigation -->
+        </div>
+    </div>
+    <!-- /page sidebar -->
+
+    <!-- Main Container -->
+    <div class="gx-main-container">
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="gx-toolbar">
+                <div class="sidebar-mobile-menu d-block d-lg-none">
+                    <a class="gx-menu-icon menu-toggle" href="#menu">
+                        <span class="menu-icon"></span>
+                    </a>
+                </div>
+
+                <a class="site-logo" href="index.html">
+                    <img src="http://via.placeholder.com/190x65" alt="Jumbo" title="Jumbo">
+                </a>
+
+                <div class="search-bar right-side-icon bg-transparent d-none d-sm-block">
+                    <div class="form-group">
+                        <input class="form-control border-0" placeholder="" value="" type="search">
+                        <button class="search-icon"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+                    </div>
+                </div>
+
+                <ul class="quick-menu header-notifications ml-auto">
+
+                    <li class="nav-searchbox dropdown d-inline-block d-sm-none">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block icon-btn" aria-expanded="false">
+                            <i class="zmdi zmdi-search zmdi-hc-fw"></i>
+                        </a>
+                        <div aria-hidden="true" class="p-0 dropdown-menu dropdown-menu-right search-bar right-side-icon search-dropdown">
+                            <div class="form-group">
+                                <input class="form-control border-0" placeholder="" value="" type="search">
+                                <button class="search-icon"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block" aria-expanded="true">
+                            <i class="zmdi zmdi-notifications-active icons-alert animated infinite wobble"></i>
+                        </a>
+
+                        <div role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                            <div class="gx-card-header d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="card-heading">Notifications</h3>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu-perfectscrollbar">
+                                <div class="messages-list">
+                                    <ul class="list-unstyled">
+                                        <li class="media">
+                                            <img alt="stella-johnson" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Stella Johnson has recently posted an
+                                                    album</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-thumb-up text-blue zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>4:10 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="domnic-harris" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Alex Brown has shared Martin Guptil's
+                                                    post</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-comment-text text-grey zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:18 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="domnic-brown" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Domnic Brown has sent you a group invitation
+                                                    for Global Health</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-card-giftcard text-info zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:36 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="john-smith" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">John Smith has birthday today</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-cake text-warning zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:54 PM</small></span>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <img alt="jimmy-jo" src="http://via.placeholder.com/150x150"
+                                                 class="size-40 mr-2 rounded-circle">
+                                            <div class="media-body align-self-center">
+                                                <p class="sub-heading mb-0">Chris has updated his profile picture</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs mb-0">
+                                                    <i class="zmdi zmdi-account-box-o text-grey zmdi-hc-fw"></i>
+                                                </a>
+                                                <span class="meta-date"><small>5:25 PM</small></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" class="d-inline-block" aria-expanded="true">
+                            <i class="zmdi zmdi-comment-alt-text icons-alert zmdi-hc-fw"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" data-placement="bottom-end" data-x-out-of-boundaries="">
+                            <div class="gx-card-header d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="card-heading">Messages</h3>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu-perfectscrollbar1">
+                                <div class="messages-list">
+                                    <ul class="list-unstyled">
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="Domnic Brown" src="http://via.placeholder.com/150x150" class="rounded-circle size-40 user-avatar">
+                                                <span class="badge badge-danger rounded-circle">5</span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">Domnic Brown</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>6:19 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">There are many variations of passages of...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="John Smith" src="http://via.placeholder.com/150x150" class="rounded-circle size-40 user-avatar">
+                                                <span class="badge badge-danger rounded-circle"></span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">John Smith</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>4:18 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">Lorem Ipsum is simply dummy text of the...</p>
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="John Smith" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+                                                <span class="badge badge-danger rounded-circle">8</span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">John Smith</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>7:10 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">The point of using Lorem Ipsum is that it
+                                                    has...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="alex dolgove" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+                                                <span class="badge badge-danger rounded-circle"></span>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">alex dolgove</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>5:10 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">It is a long established fact that a reader
+                                                    will...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="user-thumb">
+                                                <img alt="Domnic Harris" src="http://via.placeholder.com/150x150" class="size-40 rounded-circle user-avatar">
+
+                                                <span class="badge badge-danger rounded-circle">3</span>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-capitalize user-name mb-0">
+                                                        <a href="javascript:void(0)">Domnic Harris</a>
+                                                    </h5>
+                                                    <span class="meta-date"><small>7:35 PM</small></span>
+                                                </div>
+                                                <p class="sub-heading">All the Lorem Ipsum generators on the...</p>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-mail-reply"></i>
+                                                    <span>Reply</span>
+                                                </a>
+
+                                                <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-xs text-muted">
+                                                    <i class="zmdi zmdi-eye"></i>
+                                                    <span>Read</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- /main header -->
+
+        <!-- Main Content -->
+        <div class="gx-main-content">
+            <!--gx-wrapper-->
+            <div class="gx-wrapper">
+                <div class="dashboard animated slideInUpTiny animation-duration-3">
+                    <div class="page-heading d-sm-flex justify-content-sm-between align-items-sm-center">
+                        <h2 class="title mb-3 mb-sm-0">Intranet</h2>
+                        <nav class="mb-0 breadcrumb">
+                            <a href="index.html" class="breadcrumb-item">Jumbo</a>
+                            <a href="index.html" class="breadcrumb-item">Dashboard</a>
+                            <span class="active breadcrumb-item">Intranet</span>
+                        </nav>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="gx-card bg-transparent no-shadow p-0">
+                                <div class="gx-card-header pt-3 px-4">
+                                    <h3 class="card-heading">User Statstics</h3>
+                                </div>
+                                <div class="gx-card-body">
+                                    <div id="intranet" class="c3-chart" style="height: 185px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12">
+                            <div class="card shadow text-center border-0">
+                                <div class="card-header py-3 d-flex justify-content-between">
+                                    <h3 class="mb-0">View</h3>
+                                    <span class="badge badge-secondary">Monthly</span>
+                                </div>
+                                <div class="stack-order py-4 px-2"><h1>386,200</h1>
+                                    <span class="h3 text-muted">Total View</span>
+                                    <span class="text-amber"><i class="zmdi zmdi-flash zmdi-hc-fw"></i>98%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                            <div class="card shadow text-center border-0">
+                                <div class="card-header py-3 d-flex justify-content-between"><h3 class="mb-0">Order</h3>
+                                    <span class="badge badge-secondary">Annual</span>
+                                </div>
+                                <div class="stack-order py-4 px-2">
+                                    <h1>80,800</h1>
+                                    <span class="h3 text-muted">New order</span>
+                                    <span class="h5 text-primary">
+                                        <i class="zmdi zmdi-long-arrow-return zmdi-hc-fw zmdi-hc-rotate-90"></i>20%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-sm-12 col-12">
+                            <div class="card shadow text-center border-0">
+                                <div class="card-header py-3 d-flex justify-content-between">
+                                    <h3 class="mb-0">Visited</h3>
+                                    <span class="badge badge-primary">Today</span>
+                                </div>
+                                <div class="col-with-divider py-4 px-4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="stack-order">
+                                                <h1>406,42</h1>
+                                                <span class="h3 text-primary">Rapid pace</span>
+                                                <span class="h5 text-primary">
+                                                    <i class="zmdi zmdi-long-arrow-return zmdi-hc-fw zmdi-hc-rotate-90"></i>20%
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="stack-order">
+                                                <h1>206,12</h1>
+                                                <span class="h3 text-primary">Slow pace</span>
+                                                <span class="h5 text-primary">
+                                                    <i class="zmdi zmdi-long-arrow-return zmdi-hc-fw zmdi-hc-rotate-90"></i>20%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12">
+                            <div class="gx-card text-center">
+                                <div class="gx-card-header-color bg-blue darken-1">
+                                    <div class="gx-card-header-top">
+                                        <a href="javascript:void(0)" class="gx-menu-icon mr-auto">
+                                            <span class="menu-icon"></span>
+                                        </a>
+                                        <div class="dropdown">
+                                            <a class="dropdown-more dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink1"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink1">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <img class="rounded-circle size-100 avatar-shadow mb-3" src="http://via.placeholder.com/150x150" alt="Team Member">
+                                    <div class="gx-card-hd-content text-white">
+                                        <h4 class="mb-0">Dom Harris</h4>
+                                        <p class="mb-0">Graphic Designer</p>
+                                    </div>
+                                </div>
+                                <div class="gx-card-body">
+                                    <p>Cenas in erat accumsan, hendrerit lorem vel, pulvinar odio long. Quisque eu conva.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex mb-2">
+                                    <div class="mr-auto">
+                                        <h3 class="card-heading">New Connections</h3>
+                                        <p class="sub-heading">3 This week</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-chevron-down zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink2">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="default-table table-sm table remove-table-border mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img alt="Jimmy Jo" src="http://via.placeholder.com/150x150" class="user-avatar avatar-shadow">
+                                                </td>
+                                                <td>
+                                                    <h4 class="user-name">Jimmy Jhonson</h4>
+                                                    <p class="user-description">@jim.jhonson</p>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="d-block text-uppercase badge badge-light">follow</a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img alt="Domnic Brown" src="http://via.placeholder.com/150x150" class="user-avatar avatar-shadow">
+                                                </td>
+                                                <td>
+                                                    <h4 class="user-name">Domnic Brown</h4>
+                                                    <p class="user-description">@domnic.brown</p>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="d-block text-uppercase badge badge-primary">Unfollow</a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img alt="Stella Jhonson" src="http://via.placeholder.com/150x150" class="user-avatar avatar-shadow">
+                                                </td>
+                                                <td>
+                                                    <h4 class="user-name">Stella Jhonson</h4>
+                                                    <p class="user-description">@stella.jhonson</p>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="d-block text-uppercase badge badge-light">follow</a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img alt="John Smith" src="http://via.placeholder.com/150x150" class="user-avatar avatar-shadow">
+                                                </td>
+                                                <td>
+                                                    <h4 class="user-name">John Smith</h4>
+                                                    <p class="user-description">@john.s</p>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="d-block text-uppercase badge badge-primary">Unfollow</a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 col-sm-6 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex">
+                                    <div class="mr-auto">
+                                        <h3 class="card-heading">Recent Activities</h3>
+                                        <p class="sub-heading">Last activity was 2 days ago</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-chevron-down zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink3">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media social-list-line">
+                                    <div class="bg-primary user-avatar size-40 z-index-20 mr-3">
+                                        <i class="zmdi zmdi-apple text-white zmdi-hc-fw zmdi-hc-lg"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="mb-1">iOS app launched</h4>
+                                        <h5 class="text-muted mb-1">Fgram project’s new iOS app is launched today</h5>
+                                        <p class="meta-date">20 March, 2017</p>
+                                    </div>
+                                </div>
+
+                                <div class="media social-list-line">
+                                    <div class="bg-danger user-avatar size-40 z-index-20 mr-3">
+                                        <i class="zmdi zmdi-android text-white zmdi-hc-fw zmdi-hc-lg"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="mb-1">Android app launched</h4>
+                                        <h5 class="text-muted mb-1">It is a long established fact that a reader will be distracted by the</h5>
+                                        <p class="meta-date">27 Feb, 2017</p>
+                                    </div>
+                                </div>
+                                <div class="media social-list-line">
+                                    <div class="bg-info user-avatar size-40 z-index-20 mr-3">
+                                        <i class="zmdi zmdi-dropbox text-white zmdi-hc-fw zmdi-hc-lg"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="mb-1">PSD file added to dropbox</h4>
+                                        <h5 class="text-muted mb-1">There are many variations of passages of Lorem Ipsum available</h5>
+                                        <p class="meta-date mb-0">24 Feb, 2017</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex">
+                                    <h3 class="mb-0 mr-auto">Current Projects List</h3>
+                                    <span class="badge badge-success">This Week</span>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="default-table table table-sm remove-table-border table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Project</th>
+                                                <th scope="col" class="text-center">Date</th>
+                                                <th scope="col" class="text-center">Status</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="max-width-100"><h4 class="text-truncate mb-0">Jambo Admin</h4></td>
+                                                <td class="text-center p-1">Oct 21</td>
+                                                <td class="text-center"><span class="d-block badge badge-primary">Completed</span></td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="max-width-100"><h4 class="text-truncate mb-0">Chatbull</h4></td>
+                                                <td class="text-center p-1">Oct 22</td>
+                                                <td class="text-center"><span class="d-block badge badge-info">On Hold</span></td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="max-width-100"><h4 class="text-truncate mb-0">Mouldifi</h4></td>
+                                                <td class="text-center p-1">Nov 12</td>
+                                                <td class="text-center"><span class="d-block badge badge-warning">Delayed</span></td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="max-width-100"><h4 class="text-truncate mb-0">Simplify Timer</h4></td>
+                                                <td class="text-center p-1">Nov 21</td>
+                                                <td class="text-center"><span class="d-block badge badge-danger">Cancelled</span></td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="max-width-100"><h4 class="text-truncate mb-0">Clevex</h4></td>
+                                                <td class="text-center p-1">jan 21</td>
+                                                <td class="text-center"><span class="d-block badge badge-primary">Completed</span></td>
+                                                <td class="text-right">
+                                                    <a class="dropdown-more" href="javascript:void(0)">
+                                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex">
+                                    <div class="mr-auto">
+                                        <h3 class="card-heading d-inline-block mb-0">To-do Items List</h3>
+                                        <span class="badge badge-info">Today</span>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-chevron-down zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink4">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="todo-cell-group">
+                                    <div class="todo-cell d-flex align-items-center">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline1">
+                                            <label class="custom-control-label" for="customControlInline1">Create wireframes for Mouldifi</label>
+                                        </div>
+                                    </div>
+                                    <div class="todo-cell d-flex align-items-center">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline2" checked="checked">
+                                            <label class="custom-control-label" for="customControlInline2">
+                                                <del class="text-muted">Design PSD files for Jambo</del>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="todo-cell d-flex align-items-center">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline3" checked="checked">
+                                            <label class="custom-control-label" for="customControlInline3">
+                                                Bring the latest idea to the digital paper and send this for the selection.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="todo-cell d-flex align-items-center">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline4">
+                                            <label class="custom-control-label" for="customControlInline4">
+                                                <del class="text-muted">New logo design for Mouldifi project</del>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="todo-cell d-flex align-items-center">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline5" checked="checked">
+                                            <label class="custom-control-label" for="customControlInline5">
+                                                Deploy existing code to example.com
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex align-items-center mb-3">
+                                    <h3 class="card-heading mb-0">
+                                        <i class="zmdi zmdi-chart-donut zmdi-hc-fw text-info text-lighten-2 mr-2"></i>Marketing Campaign
+                                    </h3>
+                                    <span class="badge badge-primary ml-auto">Today</span>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-sm remove-table-border table-hover mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="size-40 rounded bg-indigo lighten-1 d-flex-xy-ctr">
+                                                        <i class="zmdi zmdi-facebook text-white zmdi-hc-lg"></i>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5 class="user-name">Facebook Ads</h5>
+                                                    <p class="user-description">63 Likes, 387 Shares</p>
+                                                </td>
+                                                <td>
+                                                    <h5 class="mb-0">$ 570</h5>
+                                                    <span class="text-muted">Spent</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="text-success">
+                                                        <i class="zmdi zmdi-trending-up"></i>20
+                                                    </div>
+                                                    <div class="text-muted text-capitalize">up</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="size-40 rounded bg-light-blue accent-2 d-flex-xy-ctr">
+                                                        <i class="zmdi zmdi-twitter text-white zmdi-hc-lg"></i>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5 class="user-name">Twitter Ads</h5>
+                                                    <p class="user-description">43 Likes, 545 Shares</p>
+                                                </td>
+                                                <td>
+                                                    <h5 class="mb-0">$ 811</h5>
+                                                    <span class="text-muted">Spent</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class="text-danger">
+                                                        <i class="zmdi zmdi-trending-down"></i>-5
+                                                    </div>
+                                                    <div class="text-muted text-capitalize">down</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="size-40 rounded bg-brown lighten-1 d-flex-xy-ctr">
+                                                        <i class="zmdi zmdi-instagram text-white zmdi-hc-lg"></i>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5 class="user-name">Instagram</h5>
+                                                    <p class="user-description">83 Follows, 210 Likes</p>
+                                                </td>
+                                                <td class="py-2">
+                                                    <h5 class="mb-0">$ 685 </h5>
+                                                    <span class="text-muted">Spent</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class=" text-success">
+                                                        <i class="zmdi zmdi-trending-up"></i>20
+                                                    </div>
+                                                    <div class="text-muted text-capitalize">up</div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="size-40 rounded bg-light-blue darken-3 d-flex-xy-ctr">
+                                                        <i class="zmdi zmdi-linkedin text-white zmdi-hc-lg"></i>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5 class="user-name">LinkedIn</h5>
+                                                    <p class="user-description">23 Follows, 764 Likes</p>
+                                                </td>
+                                                <td>
+                                                    <h5 class="mb-0">$ 868</h5>
+                                                    <span class="text-muted">Spent</span>
+                                                </td>
+                                                <td class="text-right">
+                                                    <div class=" text-success">
+                                                        <i class="zmdi zmdi-trending-up"></i>25
+                                                    </div>
+                                                    <div class="text-muted text-capitalize">up</div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-md-7 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex align-items-center">
+                                    <div class="mr-auto">
+                                        <h3 class="card-heading mb-0">
+                                            <i class="zmdi zmdi-notifications-active mr-2"></i>Latest Notifications
+                                        </h3>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button" id="dropdownMenuLink5"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink5">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-notifications px-4">
+                                    <ul class="nav nav-tabs nav-fill" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#appNotifications"
+                                               role="tab" aria-controls="appNotifications" aria-selected="true">App Notifications
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#announcements" role="tab"
+                                               aria-controls="announcements" aria-selected="true">Announcements
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="appNotifications" class="tab-pane active">
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Stella</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Message" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Message</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Jeson Born</a> Need your help on
+                                                    <a href="javascript:void(0)">Jambo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Guptil</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Alex Dolgove</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Message" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Dominc Harris</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Clevex</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="announcements" class="tab-pane">
+                                        <div class="user-profile">
+                                            <img alt="Message" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Jimmy Jhonson</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Clevex</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Alex Dolgove</a>has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Message" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Message</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Jeson Born</a> Need your help on
+                                                    <a href="javascript:void(0)">Jambo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Stella</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-profile">
+                                            <img alt="Invitation" src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+
+                                            <div class="user-detail">
+                                                <h5 class="text-muted text-uppercase mb-0">
+                                                    <small>Invitation</small>
+                                                </h5>
+                                                <div class="user-description">
+                                                    <a href="javascript:void(0)">Guptil</a> has sent you an invitation to join project
+                                                    <a href="javascript:void(0)">Mouldifi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-5 col-12 order-xl-3">
+                            <div class="gx-card">
+                                <div class="gx-card-header-color text-center bg-blue darken-1">
+                                    <div class="gx-card-header-top">
+                                        <a href="javascript:void(0)" class="gx-menu-icon mr-auto">
+                                            <span class="menu-icon"></span>
+                                        </a>
+                                        <div class="dropdown">
+                                            <a class="dropdown-more dropdown-toggle" href="#" role="button" id="dropdownMenuLink6"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg text-white"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink6">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-blue lighten-4 size-100 mx-auto mb-3 user-avatar">
+                                        <h1 class="m-0 text-blue text-darken-4 font-weight-bold">24</h1>
+                                    </div>
+                                    <div class="gx-card-hd-content text-white">
+                                        <h2 class="text-white">Monday</h2>
+                                        <p class="font-weight-bold">July 2017</p>
+                                    </div>
+                                </div>
+                                <div class="gx-card-body">
+                                    <div class="d-flex flex-column">
+                                        <div class="list-line-item">
+                                            <div class="list-line-badge bg-blue darken-1"></div>
+                                            <div class="list-line-content">
+                                                <h3 class="mb-1 text-blue text-darken-1">Learning React</h3>
+                                                <p class="text-muted">6:30 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-line-item">
+                                            <div class="list-line-badge bg-danger">
+                                            </div>
+                                            <div class="list-line-content">
+                                                <h3 class="text-danger mb-1">Logo Design</h3>
+                                                <p class="text-muted">7:15 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-line-item">
+                                            <div class="list-line-badge bg-success"></div>
+                                            <div class="list-line-content">
+                                                <h3 class="text-success mb-1">Timesheet Setup</h3>
+                                                <p class="text-muted">8:45 pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex">
+                                    <div class="mr-auto">
+                                        <h3 class="card-heading d-inline-block mb-0">Your Daily Feed</h3>
+                                        <span class="badge badge-success">23 New Feeds</span></div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-chevron-down zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink7">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gx-card-body">
+                                    <div class="media user-profile">
+                                        <img alt="..." src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                        <div class="media-body align-self-center">
+                                            <h5 class="mb-1">
+                                                <a href="javascript:void(0)">Guptil</a> has sent you an invitation to join project
+                                                <a href="javascript:void(0)">Mouldifi</a>
+                                            </h5>
+                                            <span class="meta-date">Today 06:30 pm - 12.10.17</span>
+                                        </div>
+                                        <span class="ml-1 meta-date">5m ago</span>
+                                    </div>
+
+                                    <div class="media user-profile">
+                                        <img alt="..." src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                        <div class="media-body align-self-center">
+                                            <h5 class="mb-1">
+                                                <a href="javascript:void(0)">Mich</a> uploaded 6 new photos in
+                                                <a href="javascript:void(0)">Art Lovers</a> group
+                                            </h5>
+                                            <span class="meta-date">Today 06:30 pm - 12.10.17</span>
+                                        </div>
+                                        <span class="ml-1 meta-date">3m ago</span>
+                                    </div>
+
+                                    <div class="media user-profile">
+                                        <img alt="..." src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                        <div class="media-body align-self-center">
+                                            <h5 class="mb-1">
+                                                <a href="javascript:void(0)">Joshua</a> has shared a post asaying this is bigening.
+                                            </h5>
+                                            <span class="meta-date">Today 06:30 pm - 12.10.17</span>
+                                            <div class="my-2 btn-group-mins">
+                                                <a class="gx-btn gx-btn-xs gx-btn-primary" href="javascript:void(0)">
+                                                    <i class="zmdi zmdi-thumb-up mr-1"></i>&nbsp;Like
+                                                </a>
+                                                <a class="gx-btn gx-btn-xs btn-info" href="javascript:void(0)">
+                                                    <i class="zmdi zmdi-share mr-1"></i>&nbsp;Share
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="ml-1 meta-date">1 day ago</span>
+                                    </div>
+
+                                    <div class="media user-profile">
+                                        <img alt="..." src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                        <div class="media-body align-self-center">
+                                            <h5 class="mb-1">
+                                                <a href="javascript:void(0)">Stella</a> has sent you an invitation</h5>
+                                            <span class="meta-date">Today 06:30 pm - 12.10.17 </span>
+                                        </div>
+                                        <span class="ml-1 meta-date">2 day ago</span>
+                                    </div>
+
+                                    <div class="media user-profile">
+                                        <img alt="..." src="http://via.placeholder.com/150x150" class="user-avatar mr-2">
+                                        <div class="media-body align-self-center">
+                                            <h5 class="mb-1"><a href="javascript:void(0)">Kadir</a> uploaded 1 new photos in</h5>
+                                            <span class="meta-date">Yesterday 01:30 pm - 11.10.17 </span>
+                                        </div>
+                                        <span class="ml-1 meta-date">3 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-8 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header">
+                                    <h3 class="mb-0">Customer Around The World</h3>
+                                    <p class="text-muted">In publishing and graphic design, lorem ipsum is a filler text
+                                        or greeking commonly used to demonstrate the text</p>
+                                </div>
+                                <h4 class="text-muted">Countries</h4>
+                                <div class="row">
+                                    <div class="col-xl-8 col-12">
+                                        <div class="row mb-3 mb-md-5 mb-xl-0">
+                                            <div class="col-sm-6 col-12">
+                                                <div class=" d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-us"></i>
+                                                    <div class="px-3">USA</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-primary">
+                                                        27
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center"><i class="flag flag-32 flag-fr"></i>
+                                                    <div class="px-3">France</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-teal">
+                                                        32
+                                                    </div>
+                                                </div>
+                                                <div class=" d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-gm"></i>
+                                                    <div class="px-3">Germany</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-purple">
+                                                        18
+                                                    </div>
+                                                </div>
+                                                <div class=" d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-es"></i>
+                                                    <div class="px-3">Spain</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-cyan">
+                                                        30
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
+                                                <div class=" d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-england"></i>
+                                                    <div class="px-3">England</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-secondary">
+                                                        27
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-br"></i>
+                                                    <div class="px-3">Brazil</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-success">
+                                                        32
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-in"></i>
+                                                    <div class="px-3">India</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-warning">
+                                                        18
+                                                    </div>
+                                                </div>
+                                                <div class=" d-flex align-items-center">
+                                                    <i class="flag flag-32 flag-gm"></i>
+                                                    <div class="px-3">Canada</div>
+                                                    <div class="ml-auto px-3 badge badge-pill text-right text-white bg-danger">
+                                                        30
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-12">
+                                        <div id="around-the-world" style="height: 120px;"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex">
+                                    <h3 class="card-heading mr-auto">Pictures from around the world</h3>
+                                    <a class="dropdown-more" href="javascript:void(0)">
+                                        <i class="zmdi zmdi-more-vert zmdi-hc-fw zmdi-hc-lg"></i>
+                                    </a>
+                                </div>
+                                <ul class="list-inline thumbnail-list">
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Breakfast" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Honey" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Vegetables" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Olive oil" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Blue Bird" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="thumbnail-item">
+                                        <div class="grid-thumb-equal">
+                                            <a href="javascript:void(0)" class="grid-thumb-cover">
+                                                <img alt="Morning" src="http://via.placeholder.com/500x330">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-5 col-sm-12 col-12">
+                            <div class="gx-card p-0">
+                                <div class="gx-card-body">
+                                        <div class="embed-responsive embed-responsive-1by1">
+                                            <div id="vmap" class="embed-responsive-item embed-responsive-item-custom"></div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-7 col-12">
+                            <div class="gx-card p-0">
+                                <div class="gx-card-header mb-0 p-4 bg-grey lighten-4">
+                                    <h3 class="card-heading">Our Office</h3>
+                                    <p class="sub-heading">Fusce eget dolor id justo luctus commodo vel pharetra nisi. Donec velit libero</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="contact-list list-unstyled">
+                                        <li class="media">
+                                            <i class="zmdi zmdi-phone zmdi-hc-fw zmdi-hc-lg text-primary align-self-center"></i>
+                                            <span class="media-body">+01-992-856-8535</span>
+                                        </li>
+                                        <li class="media">
+                                            <i class="zmdi zmdi-email zmdi-hc-fw zmdi-hc-lg text-primary align-self-center"></i>
+                                            <span class="media-body">bob.builder@jobportal.com</span>
+                                        </li>
+                                        <li class="media">
+                                            <i class="zmdi zmdi-facebook-box zmdi-hc-fw zmdi-hc-lg text-primary align-self-center"></i>
+                                            <span class="media-body">jemmy.godbole</span>
+                                        </li>
+                                        <li class="media">
+                                            <i class="zmdi zmdi-twitter-box zmdi-hc-fw zmdi-hc-lg text-primary align-self-center"></i>
+                                            <span class="media-body">twitter.godbole</span>
+                                        </li>
+                                        <li class="media">
+                                            <i class="zmdi zmdi-pin zmdi-hc-fw zmdi-hc-lg text-primary align-self-center"></i>
+                                            <span class="media-body">488, blingum road, JP Street,<br>NJ, KC45 5473</span>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="gx-btn gx-flat-btn gx-btn-primary gx-btn-sm">Get directions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-5 col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="gx-card">
+                                        <h4 class="text-muted">Word of the Day</h4>
+                                        <h3 class="card-title my-2">be-nev-o-lent</h3>
+                                        <div class="text-muted mb-3">adjective</div>
+                                        <p class="h4 text-muted">Well meaning and kindly “a benevolent smile”</p>
+                                        <a href="javascript:void(0)" class="card-link text-uppercase">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="gx-card">
+                                        <div class="gx-card-thumb">
+                                            <img class="card-img img-fluid" src="http://via.placeholder.com/500x330" alt="...">
+                                        </div>
+                                        <div class="gx-card-social">
+                                            <ul class="social-link">
+                                                <li class="active"><a href="javascript:void(0)"><i class="zmdi zmdi-favorite zmdi-hc-lg"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="zmdi zmdi-bookmark zmdi-hc-lg"></i></a></li>
+                                                <li><a href="javascript:void(0)"><i class="zmdi zmdi-share zmdi-hc-lg"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="gx-card">
+                                <div class="gx-card-header d-flex mb-4">
+                                    <div class="mr-auto"><h3 class="card-heading">Popular Products</h3>
+                                        <p class="sub-heading">Lorem ipsum dolor sit is...</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-more dropdown-toggle" href="#" role="button"
+                                           id="dropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-chevron-down zmdi-hc-fw zmdi-hc-lg"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink8">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-0">
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="Up unpacked friendly">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6"><h4 class="mb-2"> Up unpacked friendly</h4>
+                                                <p class="text-muted mb-1"> Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"><del><i class="zmdi zmdi-money"></i>250</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>200 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="It allowance prevailed">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6"><h4 class="mb-2"> It allowance prevailed</h4>
+                                                <p class="text-muted mb-1"> It is a long established fact that a reader will be distracted</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"><del><i class="zmdi zmdi-money"></i>250</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>200 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="Case read they must">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6"><h4 class="mb-2"> Case read they must</h4>
+                                                <p class="text-muted mb-1"> There are many variations of passages of Lorem Ipsum available</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"> <del><i class="zmdi zmdi-money"></i>250</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>200 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="Too carriage attended">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6">
+                                                <h4 class="mb-2"> Too carriage attended</h4>
+                                                <p class="text-muted mb-1"> The standard chunk of Lorem Ipsum used since the 1500s</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"><del><i class="zmdi zmdi-money"></i>250</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>200 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="Case read they must">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6">
+                                                <h4 class="mb-2"> Case read they must</h4>
+                                                <p class="text-muted mb-1"> There are many variations of passages of Lorem Ipsum available</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"><del><i class="zmdi zmdi-money"></i>400</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>370 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-4 col-6 mb-2">
+                                                <img class="img-fluid rounded" src="http://via.placeholder.com/500x330" alt="Too carriage attended">
+                                            </div>
+                                            <div class="col-lg-7 col-md-8 col-6">
+                                                <h4 class="mb-2"> Too carriage attended</h4>
+                                                <p class="text-muted mb-1"> The standard chunk of Lorem Ipsum used since the 1500s</p>
+                                                <div class="d-flex align-items-end">
+                                                    <h5 class="text-muted mr-2"><del><i class="zmdi zmdi-money"></i>250</del></h5>
+                                                    <h4><i class="zmdi zmdi-money"></i>200 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="card-link text-uppercase" href="javascript:void(0)">VIEW ALL PRODUCTS</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--/gx-wrapper-->
+
+            <!-- Footer -->
+            <footer class="gx-footer">
+                <div class="d-flex flex-row justify-content-between">
+                    <p> Copyright Company Name © 2018</p>
+                    <a href="https://themeforest.net/item/jumbo-admin-responsive-admin-dashboard-template/21368029" target="_blank" class="btn-link text-uppercase">Buy Now</a>
+                </div>
+            </footer>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /main container -->
+
+    <!-- Theme Options Button -->
+    <div id="colorTheme" class="theme-option">
+        <a href="javascript:void(0)" class="action-btn">
+            <i class="zmdi zmdi-settings zmdi-hc-spin text-white"></i>
+        </a>
+    </div>
+    <!-- /Theme Options Button -->
+
+</div>
+<!-- /page container -->
+
+<!-- Right Sidebar-->
+<div id="colorSidebar" class="app-sidebar-content right-sidebar">
+    <div class="color-theme">
+        <div class="color-theme-header">
+            <h3 class="color-theme-title">Service Panel</h3>
+            <a href="javascript:void(0)" class="action-btn" id="close-setting-panel">
+                <i class="zmdi zmdi-close text-white"></i>
+            </a>
+        </div>
+
+        <div class="color-theme-body">
+            <h3>Light Sidenav</h3>
+            <ul class="color-option">
+                <li>
+                    <a href="javascript:void(0)" class="bg-indigo gx-theme" data-theme="indigo"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-cyan gx-theme" data-theme="cyan"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-amber gx-theme" data-theme="amber"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-orange gx-theme" data-theme="deep-orange"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-pink gx-theme" data-theme="pink"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-blue gx-theme" data-theme="blue"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-purple gx-theme" data-theme="deep-purple"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-green gx-theme" data-theme="green"></a>
+                </li>
+            </ul>
+            <h3>Dark Sidenav</h3>
+            <ul class="color-option cr-op-dark-sidebar">
+                <li>
+                    <a href="javascript:void(0)" class="bg-indigo gx-theme" data-theme="dark-indigo"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-cyan gx-theme" data-theme="dark-cyan"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-amber gx-theme" data-theme="dark-amber"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-orange gx-theme" data-theme="dark-deep-orange"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-pink gx-theme" data-theme="dark-pink"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-blue gx-theme" data-theme="dark-blue"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-deep-purple gx-theme" data-theme="dark-deep-purple"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="bg-green gx-theme" data-theme="dark-green"></a>
+                </li>
+            </ul>
+            <h3>Dark Theme</h3>
+            <div class="material-switch">
+                <input id="switch-dark-theme" name="switch-dark-theme" type="checkbox" data-theme="dark" />
+                <label for="switch-dark-theme" class="label-default"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Right Sidebar-->
+
+<!-- Menu Backdrop -->
+<div class="menu-backdrop fade"></div>
+<!-- /menu backdrop -->
+
+<!--Load JQuery-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--Bootstrap JQuery-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--Perfect Scrollbar JQuery-->
+<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<!--Big Slide JQuery-->
+<script src="node_modules/bigslide/dist/bigSlide.min.js"></script>
+<script src="node_modules/jqvmap/dist/jquery.vmap.js"></script>
+<script src="node_modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<!--chart -->
+<script src="node_modules/d3/d3.min.js"></script>
+<script src="node_modules/c3/c3.min.js"></script>
+<script src="js/custom/chart/c3-charts.js"></script>
+
+<!--Custom JQuery-->
+<script src="js/custom/chart/intranet-chart.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>
+

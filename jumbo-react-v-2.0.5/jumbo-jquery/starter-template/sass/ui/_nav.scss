@@ -1,0 +1,49 @@
+// Nav Style
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $gx-primary;
+}
+
+.card-header.bg-primary {
+  & .nav-link {
+    color: $white;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: $black;
+      background-color: $white;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      color: $gray-100;
+    }
+  }
+}
+
+.card-header.bg-primary .tab-link {
+  & .nav-link {
+    &.active,
+    &:hover,
+    &:focus {
+      color: darken($white, 10%);
+      background-color: transparent;
+    }
+  }
+}
+
+.tab-link {
+  & .nav-link {
+    padding-bottom: 15px;
+    margin-bottom: -9px;
+
+    &.active {
+      border-bottom: 2px solid $secondary;
+    }
+  }
+}

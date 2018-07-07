@@ -1,0 +1,10 @@
+/*Main Content Styles*/
+.gx-wrapper {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}

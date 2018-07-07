@@ -1,0 +1,51 @@
+/*List Styles*/
+
+.pinned-list {
+  position: relative;
+  height: 370px;
+  overflow: auto;
+  width: auto;
+}
+
+.user-list {
+  width: 100%;
+  padding: 20px 15px 10px;
+
+  & .user-avatar {
+    margin-right: 20px;
+    @extend %size-100;
+
+    @media screen and (max-width: 575px) {
+      height: 80px !important;
+      width: 80px !important;
+      line-height: 80px;
+    }
+
+    @media screen and (max-width: 400px) {
+      height: 60px !important;
+      width: 60px !important;
+      line-height: 60px;
+    }
+  }
+  & h6 {
+    color: lighten($body-color, 40%);
+  }
+}
+
+.list-inline {
+  margin-left: -5px;
+  margin-right: -5px;
+  & li {
+    padding: 0 5px;
+    display: inline-block;
+  }
+}
+
+.card-strip {
+  border-bottom: solid 1px $gray-300;
+  margin-bottom: 10px;
+}
+
+.gx-mbtn-list {
+  margin-left: -20px;
+}

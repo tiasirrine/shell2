@@ -1,0 +1,9 @@
+{
+  "name": "ListDividers",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ListDividers.js",
+  "dependencies": {
+    "reactstrap": "next"
+  }
+}

@@ -1,0 +1,102 @@
+Change Log V 2.0.5 (current)
+--------------------------
+UPDATED -  Updated ESLint config
+
+Change Log V 2.0.4 
+--------------------------
+Fixed -  Fixed issue in flat version
+
+Change Log V 2.0.3 
+--------------------------
+UPDATED -  Material UI updated to v1.0
+
+Change Log V 2.0.2 
+--------------------------
+UPDATED -  Material UI Next updated to v1.0.0-rc.1
+
+Checkout the breaking changes(https://github.com/mui-org/material-ui/releases/tag/v1.0.0-rc.0)
+
+
+Change Log V 2.0.1 
+--------------------------
+FIXED   -  Side Navigation Multi Level issue
+
+--------------------------
+ADDED   -  DropZone Fileupload (React Versions)
+ADDED   -  Flat Design Version (Pure BootStrap4)
+ADDED   -  6 Different Layouts (React Versions)
+ADDED   -  Horizontal Navigation Style (React Versions)
+FIXED   -  Few CSS Styling
+
+Change Log V 1.9.3 
+--------------------------
+ADDED  - Added RTL support
+UPDATE - Update Material-ui-icon library 
+ADDED  - Added react-custom-scrollbar
+REMOVED - Removed jQuery from app
+
+Change Log V 1.9.2 
+--------------------------
+ADDED - 2 New variations in datatables
+ADDED - Starter Template without auth (One with auth is also there)
+
+Change Log V 1.9.1
+--------------------------
+ADDED  - Added jQuery version 
+
+Change Log V 1.9
+--------------------------
+UPDATE - Design changes applied on app modules
+
+Change Log V 1.8.1 
+--------------------------
+FIXED  - Changed  - Made Some minor design changes.
+
+Change Log V 1.8 
+--------------------------
+ADDED  - Localization in 6 languages (Internationalization )
+ADDED  - Integrated Firebase Authentication with following: Google, Facebook, Twitter, GitHub.
+ADDED  - Integrated Firebase Database and API with  following modules: Mail, Todo, Contact, Chat.
+
+Change Log V 1.7
+--------------------------
+ADDED  - Async Loading 
+ADDED  - Code Spliting 
+
+Change Log V 1.6
+--------------------------
+ADDED  - Added AotoComplete comonents in Components 
+UPDATE - Update hashRouting 
+FIXED  - Fixed some error in source code 
+FIXED  - Fixed issue in starter template 
+
+Change Log V 1.5 
+--------------------------
+FIXED    - Fixed stater template app-main-container structure
+
+Change Log V 1.4
+--------------------------
+ADDED  - Sweet Alerts Added
+ADDED  - React Notifications Added
+ADDED  - Enabled react HMR
+UPDATE - react version updated from 15.6 to 16.2
+UPDATE - material-ui library updated from version 1.0.0-beta.25 to v1.0.0-beta.30
+UPDATE - react-google-map package updated to stable 9.4.5
+UPDATE - bootstrap 4 stable version added
+FIXED  - Resolved iOS 10+ browser issue on mobile devices
+
+Log V 1.3 
+--------------------------
+ADDED - Starter Template to kickstart your project
+ADDED - Dark Theme Version
+
+Change Log V 1.2
+----------------
+ADDED - Mail App with Redux Implementation
+ADDED - To-Do App with Redux Implementation
+ADDED - Contacts App with Redux Implementation
+ADDED - Chat App with Redux Implementation
+
+Change Log V 1.1
+----------------
+ADDED - Animation to the Notification and Message Popovers in header

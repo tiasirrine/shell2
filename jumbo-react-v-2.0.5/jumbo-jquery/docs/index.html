@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jumbo Admin - BootStrap 4 and jQuery based Admin Template</title>
+
+    <!-- Site favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="documentation">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-padding" href="index.html" target="_blank"><img src="img/logo.png"
+                                                                                                alt="Logo" height="50"></a>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron -->
+<div id="faq" class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>The most awaited BootStrap 4 &amp; jQuery Template</h1>
+
+                <p class="sub-heading">Thank you for purchasing Jumbo Admin. If you have any questions about the
+                    template, please feel free to email us at <a href="mailto:info@g-axon.com">info@g-axon.com</a>.
+                </p>
+                <p>
+                    <strong>Documentation created on:</strong> 04 April, 2018<br />
+                    <strong>Latest update:</strong> 04 April, 2018<br>
+                    <strong>Template Version:</strong>1.1<br />
+                    <strong>By:</strong> <a href="http://g-axon.com/" title="G-axon website"
+                                            target="_blank">G-axon</a><br />
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/preview.jpg" alt="Site Preview" title="Site Preview" class="img-responsive center-block">
+            </div>
+        </div>
+    </div>
+</div>
+<!--/end of jumbotron -->
+
+<!-- Main content -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 index-table">
+            <a id="index_table" class="anchor"></a>
+            <h2>Table of Contents</h2>
+            <ul class="index">
+                <li><a href="#about_Jambo_Admin">About Jumbo Admin</a></li>
+                <li><a href="#basic_structure">Basic Structure</a></li>
+                <li><a href="#folder_structure">Folder Structure</a></li>
+                <li><a href="#run_demo">How to run a Demo</a></li>
+                <li><a href="#use_it">How to use it</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <a id="about_Jumbo_Admin" class="anchor"></a>
+            <h3>About Jumbo Admin&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+
+            <p>Jumbo Admin is a complete BootStrap 4 and jQuery based admin template. It comes with 30+ jQuery plugins to present the UI/UX out-of-the-box.</p>
+			
+			
+            <hr>
+
+            <a id="basic_structure" class="anchor"></a>
+            <h3>Basic Structure&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+            <p>
+                Basic strucutre representation
+            </p>
+
+<pre class="prettyprint linenums">
+├── Body
+    ├── Loader Backdrop
+        ├── Loader
+        ├── end of Loader
+    ├── end of Loader Backdrop
+
+    ├── App container
+        ├── App sidebar
+        ├── end of App sidebar
+        ├── App main container
+            ├── Main header
+            ├── end of main header
+            ├── App main content
+                ├── App wrapper
+                ├── end of App wrapper
+            ├── end of App main content
+            ├── App footer
+            ├── end of App footer
+        ├── end of App main container
+    ├── end of App container
+
+    ├── Color Sidebar
+        ├── Color Theme
+        ├── end of Color Theme
+    ├── end of Color Sidebar
+├── end of Body
+</pre>
+            <hr>
+
+
+            <div>
+                <a id="folder_structure" class="anchor"></a>
+                <h3>Folder Structure</h3>
+                <h4>Folders and files</h4>
+
+                <div>
+<pre class="prettyprint">
+├── source/                       ───> Contains the full source code of Jumbo Admin Template.
+│   ├── css/                        └──> All compiled CSS files from sass/ folder
+│   │     ├── jumbo-bootstrap.css
+│   │     ├── jumbo-form.css
+│   │     ├── theme-*.css
+│   │     └── jumbo-core.css
+│   ├── fonts/                      └──> Web font files
+│   ├── images/                     └──> Images used throughout the Jumbo Admin Template
+│   ├── js/                         └──> All JavaScript/jQuery based plugins and custom JS files
+│   ├── sass/                       └──> Complete Sass files. A right place to edit the styling
+│   │     ├── base/                   └──> Base sass files
+│   │     ├── colorTheme/             └──> Sass files to switch pre-defined color theme or start customizing an existing one
+│   │     ├── global/                 └──> Styling which applies globally are placed here
+│   │     ├── layout/                 └──> Layout related styling is placed here
+│   │     ├── module/                 └──> Styling related to App modules like Todo, Chat, Contacts, Mail etc.
+│   │     ├── pages/                  └──> Styling for colorpickers, extra pages, sweet alerts etc.
+│   │     ├── slider/                 └──> Styling for Owlcarousel, light slider is defined here.
+│   │     ├── ui/                     └──> All styling written for UI Components
+│   │     ├── jumbo-bootstrap.scss    └──> To override bootstrap v4 sass variables
+│   │     └── jumbo-core.scss         └──> Main entry point which includes all sass files
+│   ├── index.html                  └──> The default dashboard HTML file
+│   ├── ....html                    └──> Other HTML files
+│   ├── package.json                └──> Node package manager file
+│   ├── package-lock.json
+├── starter-template/              ───> The starter template to kickstart your project
+├── docs/                 ───> Its me. The documentation :)
+</pre>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="run_demo" class="row">
+        <div class="col-md-12">
+            <h2 class="page-header" id="use">How to Use It?</h2>
+            <section><p class="lead">In order to do development with it, first you'll need to have the following tools
+                installed:</p>
+                <div class="callout callout-info"><p>These tools are for development purpose only, you don't need
+                    them in production environment, meaning you can use any back-end languages you like, NodeJS is
+                    just one of the options, not required</p></div>
+                <ul>
+                    <li><a href="http://nodejs.org/">Node.js >=v6.5.0 - For npm as a package manager</a> (NPM comes along with it), just download and
+                        install it, that's it.
+                    </li>                    
+                    <li><a href="https://www.ruby-lang.org/en/">Ruby - For Writing Sass </a>(if you are using a Mac, you already have it),
+                        <a href="http://sass-lang.com/">Sass </a> for Scss CSS.
+                    </li>
+                </ul>
+                <br>
+                <p class="lead">A few steps to get started:</p>
+                <p>1. Enter into "source" folder with your command line tool.</p>
+				<pre>$ cd /path-to-source-folder</pre>
+                <p>2. Install all the NPM packages with command: </p>                
+                <pre>$ npm install</pre>
+                <p>3. Then you can start browsing the HTML pages. index.html is the right place to start with.</p>
+            </section>
+        </div>
+    </div>    
+</div>
+</div>
+<p></p>
+<p></p>
+<footer class="text-center">
+    <p>
+        <small>&copy; G-axon 2018 | Jumbo Admin - A BootStrap 4 and jQuery based Admin Themplate</small>
+    </p>
+</footer>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/prettify.js"></script>
+<script>
+    $(function () {
+        window.prettyPrint && prettyPrint();
+    })
+</script>
+</body>
+</html>

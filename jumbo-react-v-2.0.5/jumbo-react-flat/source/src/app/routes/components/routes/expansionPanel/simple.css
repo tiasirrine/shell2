@@ -1,0 +1,21 @@
+.rc-collapse {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rc-collapse > .rc-collapse-item > .rc-collapse-header {
+    height: 56px;
+    line-height: 56px;
+}
+
+.rc-collapse-content {
+    border-top: 1px solid #d9d9d9;
+}
+
+/*.rc-collapse-content,*/
+/*.rc-collapse > .rc-collapse-item-disabled > .rc-collapse-header {*/
+/*border-left: 1px solid #d9d9d9;*/
+/*border-right: 1px solid #d9d9d9;*/
+/*}*/
+
